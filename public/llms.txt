@@ -1,0 +1,29 @@
+# Liquid
+
+> Institutional-grade crypto market making firm providing 24/7 algorithmic liquidity across centralized and decentralized exchanges.
+
+## About
+
+Liquid is a crypto market making firm built by experienced quants and systems engineers. We provide institutional-grade liquidity solutions for token issuers, exchanges, and protocols.
+
+## Services
+
+- **Market Making**: Continuous, two-sided liquidity with tight spreads across 30+ exchanges. Our algorithms adapt to market conditions in real-time.
+- **Token Launches**: Day-one liquidity strategy design and execution. We establish healthy markets and sustainable trading activity for new tokens.
+- **OTC & Treasury**: Large block execution with minimal market impact. Discreet, efficient settlement for institutional-size trades.
+
+## Key Facts
+
+- Monthly trading volume: $500M+
+- Exchanges covered: 30+
+- System uptime: 99.9%
+- Operation: 24/7 globally
+
+## Supported Exchanges
+
+Binance, OKX, Bybit, Coinbase, Kraken, dYdX, Uniswap, Hyperliquid
+
+## Contact
+
+- Website: https://liquid.xyz
+- Email: hello@liquid.xyz
