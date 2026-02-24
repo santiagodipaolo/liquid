@@ -21,21 +21,23 @@ export const metadata: Metadata = {
     template: "%s | Liquid",
   },
   description:
-    "Institutional-grade market making for digital assets. 24/7 algorithmic liquidity across centralized and decentralized exchanges.",
+    "DeFi-native liquidity infrastructure. Liquidity strategy design, dynamic band management, multi-chain deployment, and cross-chain arbitrage for protocols and tokens.",
   keywords: [
-    "crypto market maker",
+    "defi liquidity",
     "crypto market making",
     "liquidity provider",
     "token liquidity",
-    "OTC crypto trading",
-    "institutional market making",
-    "crypto liquidity",
-    "digital asset market making",
+    "multi-chain liquidity",
+    "cross-chain arbitrage",
+    "dynamic liquidity bands",
+    "L2 market making",
+    "liquidity strategy",
+    "protocol liquidity",
   ],
   openGraph: {
-    title: "Liquid | Institutional Crypto Market Making",
+    title: "Liquid | DeFi Liquidity Infrastructure",
     description:
-      "Institutional-grade market making for digital assets. 24/7 algorithmic liquidity across centralized and decentralized exchanges.",
+      "DeFi-native liquidity infrastructure. Strategy design, dynamic band management, multi-chain deployment, and cross-chain arbitrage.",
     url: "https://liquid.xyz",
     siteName: "Liquid",
     type: "website",
@@ -43,9 +45,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Liquid | Institutional Crypto Market Making",
+    title: "Liquid | DeFi Liquidity Infrastructure",
     description:
-      "Institutional-grade market making for digital assets. 24/7 algorithmic liquidity.",
+      "DeFi-native liquidity infrastructure. Strategy design, dynamic bands, multi-chain deployment, and cross-chain arbitrage.",
   },
   robots: {
     index: true,
@@ -61,7 +63,7 @@ const organizationJsonLd = {
   name: "Liquid",
   url: "https://liquid.xyz",
   description:
-    "Institutional-grade crypto market making firm providing 24/7 algorithmic liquidity across centralized and decentralized exchanges.",
+    "DeFi-native liquidity infrastructure firm providing liquidity strategy design, dynamic band management, multi-chain deployment, and cross-chain arbitrage for protocols and tokens.",
   sameAs: [],
 };
 
@@ -72,9 +74,9 @@ const serviceJsonLd = {
     "@type": "Organization",
     name: "Liquid",
   },
-  serviceType: "Crypto Market Making",
+  serviceType: "DeFi Liquidity Infrastructure",
   description:
-    "Professional market making services including algorithmic liquidity provision, token launch support, and OTC trading for digital assets.",
+    "End-to-end DeFi liquidity services including strategy design, dynamic band management, multi-chain deployment across L2 networks, and cross-chain arbitrage infrastructure.",
   areaServed: "Worldwide",
 };
 

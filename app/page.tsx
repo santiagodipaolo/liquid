@@ -1,6 +1,7 @@
 import Hero from "./components/Hero";
 import Metrics from "./components/Metrics";
 import Services from "./components/Services";
+import Process from "./components/Process";
 import WhyLiquid from "./components/WhyLiquid";
 import Partners from "./components/Partners";
 import FAQ from "./components/FAQ";
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Metrics />
       <Services />
+      <Process />
       <WhyLiquid />
       <Partners />
       <FAQ />

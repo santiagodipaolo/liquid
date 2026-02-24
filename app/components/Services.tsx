@@ -1,21 +1,27 @@
 const services = [
   {
     num: "01",
-    title: "Market Making",
+    title: "Liquidity Strategy Design",
     description:
-      "Continuous, two-sided liquidity with tight spreads. Our algorithms adapt to market conditions in real-time, ensuring consistent depth across order books.",
+      "Long-term liquidity frameworks that define how liquidity is distributed over time, at which price levels deeper liquidity exists, and the implicit valuation corridor for your token.",
   },
   {
     num: "02",
-    title: "Token Launches",
+    title: "Dynamic Band Management",
     description:
-      "Liquidity from day one. We design and execute launch strategies that establish healthy markets and sustainable trading activity for new tokens.",
+      "Active liquidity management through dynamic bands — a ~5% wide mobility band for healthy depth and smooth price discovery, and a ~2% tight band for immediate stability and spread control.",
   },
   {
     num: "03",
-    title: "OTC & Treasury",
+    title: "Multi-Chain Deployment",
     description:
-      "Large block execution with minimal market impact. Discreet, efficient settlement for institutional-size trades and treasury management.",
+      "Simultaneous liquidity deployment across L2 networks with unified strategy logic, coordinated pricing, and reduced fragmentation between chains.",
+  },
+  {
+    num: "04",
+    title: "Cross-Chain Arbitrage",
+    description:
+      "Dedicated arbitrage infrastructure that keeps prices aligned across chains, prevents third-party value extraction, and captures arbitrage profits internally for the protocol.",
   },
 ];
 
@@ -23,10 +29,14 @@ export default function Services() {
   return (
     <section id="services" className="py-20 md:py-28">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-white mb-16">
+        <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-white mb-4">
           What we do
         </h2>
-        <div className="grid md:grid-cols-3 gap-6">
+        <p className="text-zinc-400 max-w-2xl mb-16 leading-relaxed">
+          End-to-end liquidity infrastructure — from strategy design to
+          automated execution across multiple chains.
+        </p>
+        <div className="grid md:grid-cols-2 gap-6">
           {services.map((s) => (
             <article
               key={s.num}

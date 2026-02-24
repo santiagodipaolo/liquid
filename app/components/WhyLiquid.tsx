@@ -1,23 +1,23 @@
 const reasons = [
   {
-    title: "Engineering-first",
+    title: "Quantitative & systematic",
     description:
-      "Built by quants and systems engineers with deep experience in high-frequency trading infrastructure and distributed systems.",
+      "Every decision is data-driven. Our strategies are built on quantitative models that define liquidity distribution, band placement, and rebalancing logic — no manual guesswork.",
   },
   {
-    title: "Battle-tested infrastructure",
+    title: "Protocol-aligned",
     description:
-      "Proprietary low-latency execution engine designed for reliability under extreme market conditions and high throughput.",
+      "Dynamic liquidity layers are fully aligned with your long-term plan, ensuring movements remain consistent with your intended valuation trajectory and token distribution goals.",
   },
   {
-    title: "Fully transparent",
+    title: "Full transparency",
     description:
-      "Real-time reporting dashboards. No hidden spreads, no opaque fee structures. You see exactly what we see.",
+      "Real-time monitoring dashboards, performance reporting, and complete visibility into every liquidity operation. You see exactly what we see.",
   },
   {
-    title: "Aligned incentives",
+    title: "Value retention",
     description:
-      "We succeed when you succeed. Token-native strategies with skin in the game ensure our interests are aligned with yours.",
+      "Our cross-chain arbitrage infrastructure captures value that would otherwise be extracted by third parties, keeping profits within the protocol ecosystem.",
   },
 ];
 

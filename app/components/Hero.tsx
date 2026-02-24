@@ -14,8 +14,9 @@ export default function Hero() {
       </h1>
 
       <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-10 leading-relaxed relative">
-        Institutional-grade market making for digital assets. Algorithmic
-        liquidity, 24/7, across centralized and decentralized exchanges.
+        DeFi-native liquidity infrastructure. We design, deploy, and manage
+        liquidity strategies with dynamic band management and cross-chain
+        arbitrage across L2 networks.
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4 relative">
@@ -29,7 +30,7 @@ export default function Hero() {
           href="#services"
           className="border border-zinc-700 text-zinc-300 px-8 py-3 rounded-full hover:border-zinc-500 hover:text-white transition-colors"
         >
-          Learn More
+          How It Works
         </a>
       </div>
     </section>

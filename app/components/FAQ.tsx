@@ -1,28 +1,28 @@
 const faqs = [
   {
-    question: "What is crypto market making?",
+    question: "What does Liquid do?",
     answer:
-      "Market making is the process of providing continuous buy and sell orders on an exchange to ensure liquidity. Market makers narrow the bid-ask spread, reduce price volatility, and make it easier for traders to execute orders at fair prices.",
+      "Liquid provides end-to-end DeFi liquidity infrastructure. We design long-term liquidity strategies, deploy them across multiple L2 chains, and manage dynamic liquidity bands and cross-chain arbitrage — all fully automated.",
   },
   {
-    question: "How does Liquid provide liquidity?",
+    question: "What are dynamic liquidity bands?",
     answer:
-      "Liquid deploys proprietary algorithmic trading strategies that maintain two-sided order books across multiple exchanges simultaneously. Our systems operate 24/7, automatically adjusting to market conditions to provide consistent depth and tight spreads.",
+      "Dynamic bands are active liquidity layers that move with the market price. We operate a wide band (~5% range) for healthy depth and smooth price discovery, and a tight band (~2% range) for immediate stability and spread control. These layers work together to absorb sudden pressure while allowing organic price movement.",
   },
   {
-    question: "What exchanges does Liquid support?",
+    question: "How does multi-chain deployment work?",
     answer:
-      "Liquid operates across 30+ centralized and decentralized exchanges, including Binance, OKX, Bybit, Coinbase, Kraken, dYdX, Uniswap, and Hyperliquid. We continuously expand our exchange coverage based on client needs.",
+      "We deploy the same liquidity strategy simultaneously across multiple L2 networks (such as Base and Optimism) with unified logic. This ensures coordinated pricing, reduces fragmentation, and gives token holders a consistent experience regardless of which chain they trade on.",
   },
   {
-    question: "What should I look for in a crypto market maker?",
+    question: "What is cross-chain arbitrage and why does it matter?",
     answer:
-      "Key factors include transparency in reporting, proven infrastructure reliability, exchange coverage, alignment of incentives, and the technical expertise of the team. A good market maker provides real-time dashboards, maintains high uptime, and offers flexible engagement models.",
+      "When the same token trades on multiple chains, price discrepancies naturally arise. Our arbitrage infrastructure continuously monitors and captures these differences before third parties can extract that value. This keeps prices aligned across chains while retaining arbitrage profits within the protocol ecosystem.",
   },
   {
-    question: "How does market making work for new token launches?",
+    question: "What does the engagement process look like?",
     answer:
-      "For token launches, Liquid designs a comprehensive liquidity strategy that covers pre-launch preparation, initial listing support, and ongoing market making. This includes setting initial price ranges, establishing order book depth, and managing volatility during the critical early trading period.",
+      "We work in two phases. Phase I (Design) covers the long-term liquidity framework, short-term backstop strategy, and dynamic band configuration. Phase II (Execution) includes multi-chain deployment, automated bot infrastructure, cross-chain arbitrage setup, and ongoing monitoring with real-time reporting dashboards.",
   },
 ];
 

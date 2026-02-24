@@ -17,7 +17,13 @@ export default function Footer() {
                 href="#services"
                 className="hover:text-white transition-colors"
               >
-                Solutions
+                Services
+              </a>
+              <a
+                href="#process"
+                className="hover:text-white transition-colors"
+              >
+                Process
               </a>
               <a href="#about" className="hover:text-white transition-colors">
                 About

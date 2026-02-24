@@ -1,8 +1,8 @@
 const metrics = [
-  { value: "$500M+", label: "Monthly Volume" },
-  { value: "30+", label: "Exchanges" },
-  { value: "99.9%", label: "Uptime" },
-  { value: "24/7", label: "Global Operation" },
+  { value: "L2", label: "Native Deployment" },
+  { value: "2–5%", label: "Dynamic Band Range" },
+  { value: "24/7", label: "Automated Operations" },
+  { value: "99.9%", label: "Uptime Target" },
 ];
 
 export default function Metrics() {
