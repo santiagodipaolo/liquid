@@ -1,8 +1,9 @@
 import Image from "next/image";
 
 const logos = [
-  { src: "/logos/pol.svg", alt: "POL", invert: false },
+  { src: "/logos/pol.png", alt: "POL", invert: true },
   { src: "/logos/lambda.png", alt: "LambdaClass", invert: true },
+  { src: "/logos/hummingbot.png", alt: "HummingBot", invert: true },
   { src: "/logos/aligned.png", alt: "Aligned", invert: true },
   { src: "/logos/levenue.png", alt: "Levenue", invert: true },
 ];
