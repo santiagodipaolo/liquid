@@ -1,27 +1,33 @@
 # Liquid
 
-> Institutional-grade crypto market making firm providing 24/7 algorithmic liquidity across centralized and decentralized exchanges.
+> DeFi-native liquidity infrastructure. We design, deploy, and manage liquidity strategies with dynamic band management and cross-chain arbitrage across L2 networks.
 
 ## About
 
-Liquid is a crypto market making firm built by experienced quants and systems engineers. We provide institutional-grade liquidity solutions for token issuers, exchanges, and protocols.
+Liquid is a DeFi liquidity infrastructure firm built by experienced quants and systems engineers. We provide end-to-end liquidity solutions for protocols and token issuers — from strategy design to automated multi-chain execution.
 
 ## Services
 
-- **Market Making**: Continuous, two-sided liquidity with tight spreads across 30+ exchanges. Our algorithms adapt to market conditions in real-time.
-- **Token Launches**: Day-one liquidity strategy design and execution. We establish healthy markets and sustainable trading activity for new tokens.
-- **OTC & Treasury**: Large block execution with minimal market impact. Discreet, efficient settlement for institutional-size trades.
+- **Liquidity Strategy Design**: Long-term liquidity frameworks that define how liquidity is distributed over time, at which price levels deeper liquidity exists, and the implicit valuation corridor for your token.
+- **Dynamic Band Management**: Active liquidity management through dynamic bands — a ~5% wide mobility band for healthy depth and smooth price discovery, and a ~2% tight band for immediate stability and spread control.
+- **Multi-Chain Deployment**: Simultaneous liquidity deployment across L2 networks with unified strategy logic, coordinated pricing, and reduced fragmentation between chains.
+- **Cross-Chain Arbitrage**: Dedicated arbitrage infrastructure that keeps prices aligned across chains, prevents third-party value extraction, and captures arbitrage profits internally for the protocol.
+
+## Process
+
+- **Phase I — Design**: Long-term liquidity framework, short-term backstop strategy, and dynamic band configuration.
+- **Phase II — Execution**: Multi-chain deployment, automated bot infrastructure, cross-chain arbitrage setup, and ongoing monitoring with real-time reporting dashboards.
 
 ## Key Facts
 
-- Monthly trading volume: $500M+
-- Exchanges covered: 30+
-- System uptime: 99.9%
-- Operation: 24/7 globally
+- Deployment: L2 native (Base, Optimism, Ethereum)
+- Dynamic band range: 2–5%
+- Operations: 24/7 automated
+- Uptime target: 99.9%
 
-## Supported Exchanges
+## Supported Protocols & Chains
 
-Binance, OKX, Bybit, Coinbase, Kraken, dYdX, Uniswap, Hyperliquid
+Uniswap, Aerodrome, Velodrome, Base, Optimism, Ethereum
 
 ## Contact
 

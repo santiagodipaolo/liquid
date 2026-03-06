@@ -44,6 +44,7 @@ export default function FAQ() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="1.5"
+                  aria-hidden="true"
                 >
                   <path d="M12 5v14M5 12h14" />
                 </svg>
