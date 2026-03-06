@@ -1,11 +1,20 @@
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6">
+    <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+      {/* Primary blue glow */}
       <div
-        className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-[60%] pointer-events-none"
+        className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[90%] h-[70%] pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse at center, rgba(59,130,246,0.08), transparent 70%)",
+            "radial-gradient(ellipse at center, rgba(59,130,246,0.15), transparent 65%)",
+        }}
+      />
+      {/* Secondary softer glow for depth */}
+      <div
+        className="absolute top-[5%] left-1/2 -translate-x-1/2 w-[60%] h-[50%] pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse at center, rgba(99,160,255,0.08), transparent 60%)",
         }}
       />
 
