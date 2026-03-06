@@ -1,11 +1,10 @@
 import Image from "next/image";
 
 const logos = [
-  { src: "/logos/pol.png", alt: "POL" },
-  { src: "/logos/lambda.png", alt: "LambdaClass" },
-  { src: "/logos/hummingbot.png", alt: "HummingBot" },
-  { src: "/logos/aligned.png", alt: "Aligned" },
-  { src: "/logos/levenue.png", alt: "Levenue" },
+  { src: "/logos/pol.svg", alt: "POL", invert: false },
+  { src: "/logos/lambda.png", alt: "LambdaClass", invert: true },
+  { src: "/logos/aligned.png", alt: "Aligned", invert: true },
+  { src: "/logos/levenue.png", alt: "Levenue", invert: true },
 ];
 
 export default function LogoCarousel() {
@@ -19,14 +18,16 @@ export default function LogoCarousel() {
           {[...logos, ...logos].map((logo, i) => (
             <div
               key={`${logo.alt}-${i}`}
-              className="logo-item flex items-center justify-center h-12 px-10 select-none"
+              className="logo-item flex items-center justify-center h-12 px-12 select-none"
             >
               <Image
                 src={logo.src}
                 alt={logo.alt}
-                width={140}
+                width={120}
                 height={48}
-                className="object-contain opacity-50 hover:opacity-90 transition-opacity brightness-0 invert"
+                className={`object-contain opacity-50 hover:opacity-90 transition-opacity ${
+                  logo.invert ? "brightness-0 invert" : ""
+                }`}
               />
             </div>
           ))}
