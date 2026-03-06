@@ -2,27 +2,32 @@ const faqs = [
   {
     question: "What does Liquid do?",
     answer:
-      "Liquid provides end-to-end DeFi liquidity infrastructure. We design long-term liquidity strategies, deploy them across multiple L2 chains, and manage dynamic liquidity bands and cross-chain arbitrage — all fully automated.",
+      "We handle liquidity, both sides of it. On centralized exchanges, we run market making algorithms that keep order books deep and spreads tight. On DEXs, we manage concentrated liquidity positions, rebalance bands, and run cross-chain arb. Everything runs 24/7, fully automated.",
   },
   {
     question: "What are dynamic liquidity bands?",
     answer:
-      "Dynamic bands are active liquidity layers that move with the market price. We operate a wide band (~5% range) for healthy depth and smooth price discovery, and a tight band (~2% range) for immediate stability and spread control. These layers work together to absorb sudden pressure while allowing organic price movement.",
+      "Think of them as guardrails. We set up two: a wide band (~5%) that gives the market room to breathe with solid depth, and a tight band (~2%) that locks in stability close to the current price. They move together automatically as the market moves.",
   },
   {
     question: "How does multi-chain deployment work?",
     answer:
-      "We deploy the same liquidity strategy simultaneously across multiple L2 networks (such as Base and Optimism) with unified logic. This ensures coordinated pricing, reduces fragmentation, and gives token holders a consistent experience regardless of which chain they trade on.",
+      "We deploy the same strategy on multiple L2s at once. Base, Optimism, wherever your token lives. The pricing stays in sync, traders get the same experience on every chain, and liquidity isn't split into disconnected fragments.",
   },
   {
     question: "What is cross-chain arbitrage and why does it matter?",
     answer:
-      "When the same token trades on multiple chains, price discrepancies naturally arise. Our arbitrage infrastructure continuously monitors and captures these differences before third parties can extract that value. This keeps prices aligned across chains while retaining arbitrage profits within the protocol ecosystem.",
+      "If your token trades on three chains, prices will drift apart. Someone is going to capture that gap. We'd rather it be us (on your behalf) than a random MEV bot. Our arb system keeps prices aligned and routes the profit back to the protocol.",
   },
   {
     question: "What does the engagement process look like?",
     answer:
-      "We work in two phases. Phase I (Design) covers the long-term liquidity framework, short-term backstop strategy, and dynamic band configuration. Phase II (Execution) includes multi-chain deployment, automated bot infrastructure, cross-chain arbitrage setup, and ongoing monitoring with real-time reporting dashboards.",
+      "Two phases. First, we design the strategy together: what the liquidity structure should look like, how bands are configured, what the risk parameters are. Then we deploy. Bots go live, arb systems start running, and you get a dashboard where you can see everything in real time.",
+  },
+  {
+    question: "What is order book market making?",
+    answer:
+      "It's the job of keeping buy and sell orders on an exchange so people can actually trade. Our algorithms place and update these orders constantly, adjusting for volatility, managing inventory, and keeping spreads competitive across multiple exchanges at once.",
   },
 ];
 

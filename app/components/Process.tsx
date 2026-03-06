@@ -6,17 +6,17 @@ const phases = [
       {
         name: "Long-Term Liquidity Framework",
         description:
-          "Define how liquidity is distributed over the protocol's lifetime, at which price levels deeper liquidity exists, and the implicit valuation corridor over time.",
+          "We map out how your liquidity should look over time. Where the depth sits, what price levels matter, how the corridor evolves.",
       },
       {
         name: "Short-Term Backstop",
         description:
-          "A reactive liquidity layer within a tight range around the current price — absorbs sudden pressure, allows real demand to drive price, and regains control when bands are exceeded.",
+          "A reactive layer that sits tight around the current price. It absorbs sell pressure, lets real demand move things, and kicks in when bands get hit.",
       },
       {
         name: "Dynamic Band Configuration",
         description:
-          "Calibration of wide (~5%) and tight (~2%) mobility bands that work together for depth, stability, and smooth price discovery.",
+          "We set up two bands: a ~5% wide band for depth, and a ~2% tight band for stability. Together they give you controlled, smooth markets.",
       },
     ],
   },
@@ -27,17 +27,17 @@ const phases = [
       {
         name: "Multi-Chain Deployment",
         description:
-          "Simultaneous deployment on target L2 networks with unified strategy logic, coordinated pricing, and reduced fragmentation.",
+          "We go live on your target L2s with the same strategy logic running everywhere. Pricing stays coordinated, liquidity stays concentrated.",
       },
       {
         name: "Automated Bot Infrastructure",
         description:
-          "Liquidity management bots handling rotation, rebalancing, and band adjustments autonomously around the clock.",
+          "Bots handle rotation, rebalancing, and band adjustments 24/7. No manual intervention unless something truly unexpected happens.",
       },
       {
         name: "Cross-Chain Arbitrage",
         description:
-          "Dedicated arbitrage system keeping prices aligned across chains and capturing value internally for the protocol.",
+          "A dedicated system watches for price gaps between chains and closes them before external actors can. The profit stays inside your protocol.",
       },
     ],
   },
@@ -54,8 +54,8 @@ export default function Process() {
           How it works
         </h2>
         <p className="text-zinc-400 max-w-2xl mb-16 leading-relaxed">
-          A two-phase approach: first we design the strategy, then we deploy and
-          manage it.
+          Two phases. First we figure out the right strategy, then we build and
+          run it.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8">

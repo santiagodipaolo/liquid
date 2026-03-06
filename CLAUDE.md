@@ -1,7 +1,7 @@
 # Liquid
 
 ## Qué es
-Landing page de Liquid — infraestructura DeFi de liquidez del grupo POL.
+Landing page de Liquid — infraestructura de liquidez (CEX market making + DEX liquidity management) del grupo POL.
 
 ## Stack
 - Next.js 16 (App Router), React 19, TypeScript 5
@@ -15,18 +15,18 @@ liquid/
 ├── app/
 │   ├── layout.tsx              # Root layout + metadata + JsonLd
 │   ├── page.tsx                # Landing page (orquesta componentes)
-│   ├── globals.css             # Tailwind imports + tema global
+│   ├── globals.css             # Tailwind imports + tema global + marquee
 │   ├── robots.ts               # SEO robots.txt
 │   ├── sitemap.ts              # Sitemap dinámico
 │   └── components/
 │       ├── Nav.tsx             # Header fijo con menú mobile
 │       ├── Hero.tsx            # Hero section con CTAs
-│       ├── Metrics.tsx         # 4 métricas clave
-│       ├── Services.tsx        # 4 servicios (cards)
+│       ├── LogoCarousel.tsx    # Marquee infinita "Trusted by" (CSS-only)
+│       ├── Services.tsx        # 2 columnas: CEX (Market Making) | DEX (Liquidity Mgmt)
+│       ├── Comparison.tsx      # Toggle "With vs Without Liquid" + visualizaciones
 │       ├── Process.tsx         # 2 fases (Design/Execution)
 │       ├── WhyLiquid.tsx       # 4 razones / value props
-│       ├── Partners.tsx        # Protocolos y chains soportados
-│       ├── FAQ.tsx             # 5 FAQs colapsables + JsonLd
+│       ├── FAQ.tsx             # 6 FAQs colapsables + JsonLd
 │       ├── CTA.tsx             # Call-to-action (Email/Call)
 │       ├── Footer.tsx          # Footer con nav + socials
 │       └── JsonLd.tsx          # Renderer de structured data
@@ -50,3 +50,4 @@ npm run lint
 - `llms.txt` en public/ para crawlers de LLMs
 - Dark theme: bg #08080c, text #e8e8ed
 - Font: Geist (via next/font)
+- Comparison.tsx es "use client" (toggle + animaciones), el resto son server components

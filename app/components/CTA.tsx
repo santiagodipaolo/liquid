@@ -6,7 +6,8 @@ export default function CTA() {
           Ready to add liquidity?
         </h2>
         <p className="text-lg text-zinc-400 mb-10 leading-relaxed">
-          Tell us about your project. Our team responds within 24 hours.
+          Tell us about your token or exchange. We usually get back within a
+          day.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a

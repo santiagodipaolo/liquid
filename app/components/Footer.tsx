@@ -10,28 +10,31 @@ export default function Footer() {
               href="/"
               className="text-lg font-semibold tracking-tight text-white"
             >
-              liquid
+              liquid.
             </Link>
-            <div className="flex gap-6 text-sm text-zinc-500">
+            <div className="flex flex-wrap gap-6 text-sm text-zinc-500">
               <a
-                href="#services"
+                href="/#services"
                 className="hover:text-white transition-colors"
               >
                 Services
               </a>
               <a
-                href="#process"
+                href="/#process"
                 className="hover:text-white transition-colors"
               >
                 Process
               </a>
-              <a href="#about" className="hover:text-white transition-colors">
+              <a href="/#about" className="hover:text-white transition-colors">
                 About
               </a>
-              <a href="#faq" className="hover:text-white transition-colors">
-                FAQ
-              </a>
-              <a href="#contact" className="hover:text-white transition-colors">
+              <Link href="/compare" className="hover:text-white transition-colors">
+                Compare
+              </Link>
+              <Link href="/blog" className="hover:text-white transition-colors">
+                Blog
+              </Link>
+              <a href="/#contact" className="hover:text-white transition-colors">
                 Contact
               </a>
             </div>

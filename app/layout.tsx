@@ -18,27 +18,29 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Liquid | DeFi Liquidity Infrastructure",
+    default: "Liquid | Liquidity Infrastructure — CEX & DEX",
     template: "%s | Liquid",
   },
   description:
-    "DeFi-native liquidity infrastructure. Liquidity strategy design, dynamic band management, multi-chain deployment, and cross-chain arbitrage for protocols and tokens.",
+    "Algorithmic market making and DEX liquidity management. Deep order books, tight spreads, concentrated liquidity positions, and cross-chain arbitrage for protocols and exchanges.",
   keywords: [
-    "defi liquidity",
     "crypto market making",
+    "algorithmic trading",
+    "order book market making",
+    "defi liquidity",
+    "concentrated liquidity",
     "liquidity provider",
     "token liquidity",
     "multi-chain liquidity",
     "cross-chain arbitrage",
-    "dynamic liquidity bands",
-    "L2 market making",
+    "CEX market making",
+    "DEX liquidity management",
     "liquidity strategy",
-    "protocol liquidity",
   ],
   openGraph: {
-    title: "Liquid | DeFi Liquidity Infrastructure",
+    title: "Liquid | Liquidity Infrastructure — CEX & DEX",
     description:
-      "DeFi-native liquidity infrastructure. Strategy design, dynamic band management, multi-chain deployment, and cross-chain arbitrage.",
+      "Algorithmic market making and DEX liquidity management. Deep order books, tight spreads, every chain.",
     url: "https://liquid.xyz",
     siteName: "Liquid",
     type: "website",
@@ -46,9 +48,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Liquid | DeFi Liquidity Infrastructure",
+    title: "Liquid | Liquidity Infrastructure — CEX & DEX",
     description:
-      "DeFi-native liquidity infrastructure. Strategy design, dynamic bands, multi-chain deployment, and cross-chain arbitrage.",
+      "Algorithmic market making and DEX liquidity management. Deep order books, tight spreads, every chain.",
   },
   robots: {
     index: true,
@@ -64,7 +66,7 @@ const organizationJsonLd = {
   name: "Liquid",
   url: "https://liquid.xyz",
   description:
-    "DeFi-native liquidity infrastructure firm providing liquidity strategy design, dynamic band management, multi-chain deployment, and cross-chain arbitrage for protocols and tokens.",
+    "Liquidity infrastructure firm providing algorithmic market making on centralized exchanges and active liquidity management across DeFi — deep order books, tight spreads, every chain.",
   sameAs: [],
 };
 
@@ -75,9 +77,9 @@ const serviceJsonLd = {
     "@type": "Organization",
     name: "Liquid",
   },
-  serviceType: "DeFi Liquidity Infrastructure",
+  serviceType: "Liquidity Infrastructure",
   description:
-    "End-to-end DeFi liquidity services including strategy design, dynamic band management, multi-chain deployment across L2 networks, and cross-chain arbitrage infrastructure.",
+    "Full-spectrum liquidity services including CEX algorithmic market making, DEX concentrated liquidity management, multi-chain deployment, and cross-chain arbitrage infrastructure.",
   areaServed: "Worldwide",
 };
 

@@ -4,10 +4,11 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const links = [
-  { label: "Services", href: "#services" },
-  { label: "Process", href: "#process" },
-  { label: "About", href: "#about" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Services", href: "/#services" },
+  { label: "Process", href: "/#process" },
+  { label: "About", href: "/#about" },
+  { label: "Compare", href: "/compare" },
+  { label: "Blog", href: "/blog" },
 ];
 
 export default function Nav() {
@@ -33,7 +34,7 @@ export default function Nav() {
           href="/"
           className="text-lg font-semibold tracking-tight text-white"
         >
-          liquid
+          liquid.
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
@@ -47,7 +48,7 @@ export default function Nav() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="/#contact"
             className="text-sm font-medium bg-white text-zinc-950 px-5 py-2 rounded-full hover:bg-zinc-200 transition-colors"
           >
             Get in Touch
@@ -89,7 +90,7 @@ export default function Nav() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="/#contact"
             onClick={() => setOpen(false)}
             className="block mt-3 text-sm font-medium bg-white text-zinc-950 text-center px-5 py-2.5 rounded-full"
           >

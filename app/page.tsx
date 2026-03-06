@@ -1,9 +1,10 @@
 import Hero from "./components/Hero";
-import Metrics from "./components/Metrics";
+import LogoCarousel from "./components/LogoCarousel";
 import Services from "./components/Services";
+import Comparison from "./components/Comparison";
 import Process from "./components/Process";
 import WhyLiquid from "./components/WhyLiquid";
-import Partners from "./components/Partners";
+import Transparency from "./components/Transparency";
 import FAQ from "./components/FAQ";
 import CTA from "./components/CTA";
 
@@ -11,11 +12,12 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Metrics />
+      <LogoCarousel />
       <Services />
+      <Comparison />
       <Process />
       <WhyLiquid />
-      <Partners />
+      <Transparency />
       <FAQ />
       <CTA />
     </>

@@ -1,33 +1,41 @@
 # Liquid
 
-> DeFi-native liquidity infrastructure. We design, deploy, and manage liquidity strategies with dynamic band management and cross-chain arbitrage across L2 networks.
+> Full-spectrum liquidity infrastructure — algorithmic market making on centralized exchanges and active liquidity management across DeFi.
 
 ## About
 
-Liquid is a DeFi liquidity infrastructure firm built by experienced quants and systems engineers. We provide end-to-end liquidity solutions for protocols and token issuers — from strategy design to automated multi-chain execution.
+Liquid is a liquidity infrastructure firm built by experienced quants and systems engineers. We provide end-to-end liquidity solutions for protocols, token issuers, and exchanges — covering both CEX order book market making and DEX liquidity management.
 
 ## Services
 
-- **Liquidity Strategy Design**: Long-term liquidity frameworks that define how liquidity is distributed over time, at which price levels deeper liquidity exists, and the implicit valuation corridor for your token.
-- **Dynamic Band Management**: Active liquidity management through dynamic bands — a ~5% wide mobility band for healthy depth and smooth price discovery, and a ~2% tight band for immediate stability and spread control.
-- **Multi-Chain Deployment**: Simultaneous liquidity deployment across L2 networks with unified strategy logic, coordinated pricing, and reduced fragmentation between chains.
-- **Cross-Chain Arbitrage**: Dedicated arbitrage infrastructure that keeps prices aligned across chains, prevents third-party value extraction, and captures arbitrage profits internally for the protocol.
+### CEX — Order Book Market Making
+- **Algorithmic Quoting**: Automated bid/ask placement using proprietary algorithms that adapt to volatility, inventory risk, and market microstructure.
+- **Tight Spread Management**: Continuous spread optimization across order book levels while managing adverse selection and P&L.
+- **Multi-Exchange Coverage**: Simultaneous market making across major centralized exchanges with unified risk management.
+- **24/7 Operations**: Round-the-clock automated infrastructure with real-time monitoring and failover systems.
+
+### DEX — Liquidity Management
+- **Concentrated Liquidity Positions**: Strategic deployment in AMM pools, maximizing capital efficiency within targeted price ranges.
+- **Dynamic Band Management**: Active rebalancing through wide and tight bands for depth, stability, and smooth price discovery.
+- **Multi-Chain Deployment**: Simultaneous deployment across L2 networks with unified strategy logic and coordinated pricing.
+- **Cross-Chain Arbitrage**: Infrastructure keeping prices aligned across chains and capturing value internally for the protocol.
 
 ## Process
 
-- **Phase I — Design**: Long-term liquidity framework, short-term backstop strategy, and dynamic band configuration.
-- **Phase II — Execution**: Multi-chain deployment, automated bot infrastructure, cross-chain arbitrage setup, and ongoing monitoring with real-time reporting dashboards.
+- **Phase I — Design**: Liquidity strategy framework (CEX or DEX), band/spread configuration, and risk parameters.
+- **Phase II — Execution**: Deployment across target exchanges and chains, automated bot infrastructure, arbitrage setup, and ongoing monitoring.
 
-## Key Facts
+## Business Model
 
-- Deployment: L2 native (Base, Optimism, Ethereum)
-- Dynamic band range: 2–5%
-- Operations: 24/7 automated
-- Uptime target: 99.9%
+Retainer only. No token loans. Client tokens stay in the client's treasury. Full transparency via real-time dashboards.
 
-## Supported Protocols & Chains
+## Pages
 
-Uniswap, Aerodrome, Velodrome, Base, Optimism, Ethereum
+- /compare — Loan Model vs Retainer Model side-by-side comparison
+- /blog — Insights on market making and liquidity
+- /blog/loan-vs-retainer — Token Loan vs Retainer: detailed comparison article
+
+For full documentation, see /llms-full.txt
 
 ## Contact
 

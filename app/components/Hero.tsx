@@ -23,9 +23,10 @@ export default function Hero() {
       </h1>
 
       <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-10 leading-relaxed relative">
-        DeFi-native liquidity infrastructure. We design, deploy, and manage
-        liquidity strategies with dynamic band management and cross-chain
-        arbitrage across L2 networks.
+        Algorithmic market making and DEX liquidity management.
+        <span className="block mt-1">
+          Deep order books, tight spreads, every chain.
+        </span>
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4 relative">
