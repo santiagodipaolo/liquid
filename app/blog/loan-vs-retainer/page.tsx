@@ -99,9 +99,10 @@ export default function LoanVsRetainerPost() {
           </h2>
           <p>
             With a retainer, you pay a fixed fee for the market making service.
-            The market maker uses their own capital or works within parameters
-            you define together. Your tokens stay in your treasury. There&apos;s
-            no loan, no option, no inventory that someone else controls.
+            You provide the liquidity, and the market maker deploys and manages
+            it on your behalf. There&apos;s no loan, no option, no free tokens
+            changing hands. The key difference: full visibility into every
+            position and trade, in real time.
           </p>
           <p>
             The relationship is simpler. You&apos;re paying for a service, not
@@ -136,8 +137,8 @@ export default function LoanVsRetainerPost() {
                 </tr>
                 <tr className="border-b border-zinc-800/50">
                   <td className="py-3 pr-6 text-zinc-500">Token custody</td>
-                  <td className="py-3 pr-6">Market maker holds them</td>
-                  <td className="py-3">You keep them</td>
+                  <td className="py-3 pr-6">Given for free, used at MM&apos;s discretion</td>
+                  <td className="py-3">You provide them, MM manages with full transparency</td>
                 </tr>
                 <tr className="border-b border-zinc-800/50">
                   <td className="py-3 pr-6 text-zinc-500">

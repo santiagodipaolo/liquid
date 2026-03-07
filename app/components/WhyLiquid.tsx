@@ -2,7 +2,7 @@ const reasons = [
   {
     title: "No token loans",
     description:
-      "Most market makers ask for a token loan. That means your supply sitting in someone else's hands, used however they see fit. We work on a retainer. Your tokens stay with you, and our incentives never drift from yours.",
+      "Most market makers ask for a token loan. They get your supply for free and use it however they see fit. We work on a retainer. You provide the liquidity, we manage it with full transparency. Every position visible, every trade accounted for.",
   },
   {
     title: "Quantitative, not discretionary",

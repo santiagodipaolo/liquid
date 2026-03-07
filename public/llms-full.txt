@@ -8,10 +8,10 @@ Liquid is a liquidity infrastructure firm built by quants and systems engineers.
 
 ## Business Model
 
-We operate on a retainer model. We do not ask for token loans. Clients pay a monthly fee, and we deliver market making and liquidity management services. This means:
-- Client tokens stay in the client's treasury
+We operate on a retainer model. We do not ask for token loans. Clients pay a monthly fee and provide the liquidity. We manage it on their behalf with full transparency. This means:
+- No free token allocations to the market maker
 - No option agreements on client tokens
-- No inventory risk transferred to the client
+- No hidden inventory management
 - Full transparency via real-time dashboards
 - Monthly contracts with flexible terms
 
@@ -53,7 +53,7 @@ Every client gets a real-time dashboard with:
 
 ## Differentiators
 
-1. **No token loans** — We work on retainer. Client tokens stay in the client's treasury.
+1. **No token loans** — We work on retainer. The client provides liquidity, we manage it with full visibility.
 2. **Quantitative approach** — Every strategy is modeled, backtested, and calibrated. Parameters are data, not opinions.
 3. **Battle-tested systems** — Redundant infrastructure, automated failovers, 99.9% uptime through volatility spikes and chain outages.
 4. **Value retention** — Cross-chain arbitrage profits flow back to the protocol, not to random MEV bots.

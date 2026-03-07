@@ -27,7 +27,7 @@ Liquid is a liquidity infrastructure firm built by experienced quants and system
 
 ## Business Model
 
-Retainer only. No token loans. Client tokens stay in the client's treasury. Full transparency via real-time dashboards.
+Retainer only. No token loans. The client provides the liquidity, Liquid manages it with full transparency via real-time dashboards. No free token allocations, no options, no hidden inventory management.
 
 ## Pages
 

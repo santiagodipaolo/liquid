@@ -15,14 +15,14 @@ export const metadata: Metadata = {
 const rows = [
   {
     label: "How it works",
-    loan: "You give the market maker a large token allocation. They use it as inventory and return it (minus options) after 12-24 months.",
+    loan: "You give the market maker a large token allocation for free. They use it as inventory and return it (minus options) after 12-24 months.",
     retainer:
-      "You pay a monthly fee. The market maker provides liquidity using their own capital or within parameters you define together.",
+      "You pay a monthly fee and provide the liquidity. The market maker manages it under your full visibility, with every position and trade on a real-time dashboard.",
   },
   {
     label: "Your tokens",
-    loan: "In someone else's hands for the duration of the contract.",
-    retainer: "Stay in your treasury. Always.",
+    loan: "Given away for free. In someone else's hands for the duration of the contract, used at their discretion.",
+    retainer: "You provide them for market making, but you see exactly what's happening with them at all times.",
   },
   {
     label: "Incentive alignment",
@@ -39,7 +39,7 @@ const rows = [
   {
     label: "Sell pressure risk",
     loan: "The MM may hedge by shorting your token, or exercise options into sell pressure. You might not know it's happening.",
-    retainer: "Zero sell pressure from the market maker. They don't hold your tokens.",
+    retainer: "The MM has no incentive to sell or short. They're paid a retainer, not profiting from your token movements.",
   },
   {
     label: "Contract flexibility",
@@ -168,7 +168,8 @@ export default function ComparePage() {
             We work exclusively on retainer. We think it&apos;s the only model
             where the market maker&apos;s success is fully tied to yours. No
             token loans, no options, no inventory games. You pay for a service,
-            you get full transparency, and your tokens never leave your control.
+            you provide the liquidity, and you see everything we do with it in
+            real time.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
