@@ -5,9 +5,12 @@ export default function CTA() {
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-white mb-6">
           Ready to add liquidity?
         </h2>
-        <p className="text-lg text-zinc-400 mb-10 leading-relaxed">
+        <p className="text-lg text-zinc-400 mb-4 leading-relaxed">
           Tell us about your token or exchange. We usually get back within a
           day.
+        </p>
+        <p className="text-sm text-blue-400/80 mb-10">
+          Limited early pricing available for our first 20 clients.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a

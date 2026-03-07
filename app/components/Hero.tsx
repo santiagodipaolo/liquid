@@ -18,6 +18,13 @@ export default function Hero() {
         }}
       />
 
+      <div className="relative mb-6 inline-flex items-center gap-2 border border-blue-500/30 bg-blue-500/10 rounded-full px-4 py-1.5">
+        <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
+        <span className="text-xs text-blue-300 font-medium tracking-wide">
+          Early pricing for first 20 clients
+        </span>
+      </div>
+
       <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 relative">
         Liquidity, engineered.
       </h1>
