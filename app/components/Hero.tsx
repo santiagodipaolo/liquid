@@ -22,13 +22,19 @@ export default function Hero() {
         Liquidity, engineered.
       </h1>
 
-      <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-10 leading-relaxed relative">
-        Open-source market making and DEX liquidity software, run on your
-        own accounts.
-        <span className="block mt-1">
-          You keep custody and approve every parameter. We operate it.
-        </span>
+      <p className="text-lg md:text-xl text-zinc-400 max-w-xl mb-6 leading-relaxed text-balance relative">
+        Open-source market making and DEX liquidity software, operated by us
+        on your own accounts.
       </p>
+
+      <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-10 text-sm text-zinc-500 relative">
+        {["Your custody", "Your parameters", "Flat retainer"].map((item) => (
+          <li key={item} className="flex items-center gap-2">
+            <span className="w-1 h-1 rounded-full bg-blue-500" aria-hidden="true" />
+            {item}
+          </li>
+        ))}
+      </ul>
 
       <div className="flex flex-col sm:flex-row gap-4 relative">
         <a
@@ -38,7 +44,7 @@ export default function Hero() {
           Get in Touch
         </a>
         <a
-          href="#services"
+          href="#process"
           className="border border-zinc-700 text-zinc-300 px-8 py-3 rounded-full hover:border-zinc-500 hover:text-white transition-colors"
         >
           How It Works
