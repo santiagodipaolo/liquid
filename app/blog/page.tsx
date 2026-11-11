@@ -4,15 +4,15 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Insights on market making, DEX liquidity, cross-chain infrastructure, and how to think about liquidity for your project.",
+    "Insights on token liquidity, DEX liquidity, cross-chain infrastructure, and how to run market making without handing over your tokens.",
 };
 
 const posts = [
   {
     slug: "loan-vs-retainer",
-    title: "Token loan vs retainer: choosing the right market making model",
+    title: "Token loan vs retainer: choosing how to get liquidity for your token",
     excerpt:
-      "Most market makers ask for a token loan upfront. Here's what that actually means for your project, and why we chose a different path.",
+      "Most market makers ask for a token loan upfront. Here's what that actually means for your project, and what it looks like to keep your tokens and pay an operator instead.",
     date: "2026-03-06",
     readTime: "6 min read",
   },

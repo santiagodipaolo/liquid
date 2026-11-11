@@ -127,7 +127,8 @@ export default function Transparency() {
         </h2>
         <p className="text-zinc-400 max-w-2xl mb-10 leading-relaxed">
           Every client gets their own dashboard. Not a monthly PDF. A live view
-          of everything we&apos;re doing, updated in real time.
+          of everything the software does on your accounts, updated in real
+          time.
         </p>
 
         <DashboardMockup />

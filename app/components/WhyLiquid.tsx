@@ -1,23 +1,23 @@
 const reasons = [
   {
-    title: "No token loans",
+    title: "You stay in control",
     description:
-      "Most market makers ask for a token loan. They get your supply for free and use it however they see fit. We work on a retainer. You provide the liquidity, we manage it with full transparency. Every position visible, every trade accounted for.",
+      "No token loans, no options, no custody. Your tokens and capital stay in accounts you own, and our API keys can trade but never withdraw. You approve every parameter change, and you can revoke access at any time.",
   },
   {
-    title: "Quantitative, not discretionary",
+    title: "Open source, not a black box",
     description:
-      "We don't trade on gut feel. Every strategy is modeled, backtested, and calibrated before it goes live. Parameters are data, not opinions.",
+      "We run open-source software you can read and audit. Every configuration is modeled and backtested before we propose it, and nothing goes live without your approval.",
   },
   {
     title: "Battle-tested systems",
     description:
-      "Redundant infrastructure, automated failovers, 99.9% uptime. We've been through volatility spikes, chain outages, and black swan events. The systems hold.",
+      "Redundant infrastructure, automated failovers, round-the-clock monitoring and kill switches, so volatility spikes and chain outages don't leave your book unattended.",
   },
   {
-    title: "Value stays with you",
+    title: "Flat fee, no conflicts",
     description:
-      "Cross-chain arb is inevitable. The question is who captures it. With us, that value flows back to your protocol instead of leaking to random bots.",
+      "We're paid a flat monthly retainer. We never trade your token for our own account, hold a position in it, or earn from its volume or price. Everything the software earns stays in your accounts.",
   },
 ];
 

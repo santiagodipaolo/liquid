@@ -2,32 +2,32 @@ const faqs = [
   {
     question: "What does Liquid do?",
     answer:
-      "We handle liquidity, both sides of it. On centralized exchanges, we run market making algorithms that keep order books deep and spreads tight. On DEXs, we manage concentrated liquidity positions, rebalance bands, and run cross-chain arb. Everything runs 24/7, fully automated.",
+      "We set up and operate open-source liquidity software on your own accounts. On centralized exchanges, that's quoting software that keeps order books deep and spreads tight. On DEXs, it's concentrated liquidity positions, band rebalancing and cross-chain price alignment. You own the accounts and approve the parameters; we run, monitor and report on it 24/7.",
   },
   {
     question: "What are dynamic liquidity bands?",
     answer:
-      "Think of them as guardrails. We set up two: a wide band (~5%) that gives the market room to breathe with solid depth, and a tight band (~2%) that locks in stability close to the current price. They move together automatically as the market moves.",
+      "Think of them as guardrails. A typical setup has two: a wide band (~5%) that gives the market room to breathe with solid depth, and a tight band (~2%) close to the current price. They move with the market automatically. You choose the final settings.",
   },
   {
     question: "How does multi-chain deployment work?",
     answer:
-      "We deploy the same strategy on multiple L2s at once. Base, Optimism, wherever your token lives. The pricing stays in sync, traders get the same experience on every chain, and liquidity isn't split into disconnected fragments.",
+      "We deploy the same approved configuration on multiple L2s at once. Base, Optimism, wherever your token lives. Traders get the same experience on every chain, and liquidity isn't split into disconnected fragments.",
   },
   {
     question: "What is cross-chain arbitrage and why does it matter?",
     answer:
-      "If your token trades on three chains, prices will drift apart. Someone is going to capture that gap. We'd rather it be us (on your behalf) than a random MEV bot. Our arb system keeps prices aligned and routes the profit back to the protocol.",
+      "If your token trades on three chains, prices will drift apart, and someone will capture that gap. Arbitrage software running on your own wallets keeps prices aligned, and the proceeds stay in your accounts instead of going to a random MEV bot.",
   },
   {
     question: "What does the engagement process look like?",
     answer:
-      "Two phases. First, we design the strategy together: what the liquidity structure should look like, how bands are configured, what the risk parameters are. Then we deploy. Bots go live, arb systems start running, and you get a dashboard where you can see everything in real time.",
+      "Two phases. First, we propose a configuration: liquidity structure, bands, risk limits. You review and approve it in writing. Then we deploy the software on your accounts, monitor it around the clock, and you get a dashboard showing everything in real time. Any later parameter change also goes through your approval.",
   },
   {
-    question: "What is order book market making?",
+    question: "Is Liquid my market maker?",
     answer:
-      "It's the job of keeping buy and sell orders on an exchange so people can actually trade. Our algorithms place and update these orders constantly, adjusting for volatility, managing inventory, and keeping spreads competitive across multiple exchanges at once.",
+      "No. Liquid is a technical services provider. You own the exchange accounts and wallets, provide the capital, and approve the trading parameters; we set up, operate and monitor open-source software on your behalf for a flat retainer. We never hold your funds, trade for our own account, or accept instructions to inflate volume or target a price.",
   },
 ];
 

@@ -1,15 +1,17 @@
 # Liquid — Full Documentation
 
-> Full-spectrum liquidity infrastructure. Algorithmic market making on centralized exchanges and active liquidity management across DeFi.
+> Managed liquidity operations. Liquid sets up and runs open-source market making and DEX liquidity software on accounts its clients own. Clients keep custody and approve every parameter.
 
 ## About
 
-Liquid is a liquidity infrastructure firm built by quants and systems engineers. We provide end-to-end liquidity solutions for protocols, token issuers, and exchanges — covering both CEX order book market making and DEX liquidity management. We work exclusively on a retainer model (no token loans).
+Liquid is a technical services firm built by quants and systems engineers. We set up, operate and monitor open-source liquidity software for protocols, token issuers and exchanges, covering CEX order book quoting and DEX liquidity management. Liquid is not a market maker: clients own the accounts, provide the capital and approve the parameters. We work exclusively on a flat retainer (no token loans).
 
 ## Business Model
 
-We operate on a retainer model. We do not ask for token loans. Clients pay a monthly fee and provide the liquidity. We manage it on their behalf with full transparency. This means:
-- No free token allocations to the market maker
+We operate on a flat retainer. We do not ask for token loans and we are not the client's market maker. Clients own the exchange accounts and wallets, provide the capital, and approve every parameter; we set up, operate and monitor open-source software on those accounts. This means:
+- No token allocations to Liquid
+- No custody: API keys can trade but not withdraw, revocable at any time
+- No trading for Liquid's own account, no position in client tokens
 - No option agreements on client tokens
 - No hidden inventory management
 - Full transparency via real-time dashboards
@@ -19,23 +21,23 @@ This contrasts with the token loan model used by most market makers, where the M
 
 ## Services
 
-### CEX — Order Book Market Making
-- **Algorithmic Quoting**: Automated bid/ask placement using proprietary algorithms that adapt to volatility, inventory risk, and market microstructure continuously.
-- **Tight Spread Management**: Spread optimization across order book levels while managing adverse selection and P&L.
-- **Multi-Exchange Coverage**: Simultaneous market making across major centralized exchanges with shared risk limits and coordinated pricing.
+### CEX — Order Book Operations
+- **Algorithmic Quoting**: Open-source quoting software on the client's exchange accounts, placing and updating bids and asks within client-approved spread, size and inventory limits.
+- **Tight Spread Management**: Data-driven spread and depth recommendations, client sign-off, and monitoring against the approved targets.
+- **Multi-Exchange Coverage**: The same approved configuration across every exchange where the client holds accounts, with shared client-defined risk limits.
 - **24/7 Operations**: Automated systems with monitoring, failovers, and live dashboards running around the clock.
 
 ### DEX — Liquidity Management
-- **Concentrated Liquidity Positions**: Capital deployment into concentrated AMM ranges, maximizing capital efficiency and fee capture.
+- **Concentrated Liquidity Positions**: Client liquidity, from client wallets, placed in concentrated AMM ranges for capital efficiency and fee capture.
 - **Dynamic Band Management**: Two bands working together — a wide band (~5%) for depth and price discovery, a tight band (~2%) for stability. Both move with the market automatically.
 - **Multi-Chain Deployment**: Same strategy running across L2s simultaneously with coordinated pricing and reduced fragmentation.
-- **Cross-Chain Arbitrage**: Captures price gaps between chains before external actors can. Value stays inside the protocol ecosystem.
+- **Cross-Chain Price Alignment**: Software on client wallets closes price gaps between chains before external actors can; proceeds stay in client accounts.
 
 ## Process
 
 ### Phase I — Design
-1. Long-term liquidity framework: how liquidity is distributed over time, key price levels, corridor evolution
-2. Short-term backstop: reactive layer around current price that absorbs sell pressure and lets real demand drive price
+1. Long-term liquidity framework: how liquidity is distributed over time; the client decides what goes live
+2. Near-price depth: liquidity close to the current price so normal-size trades fill without slippage, while supply and demand set the price
 3. Dynamic band configuration: calibration of wide (~5%) and tight (~2%) mobility bands
 
 ### Phase II — Execution
@@ -53,18 +55,18 @@ Every client gets a real-time dashboard with:
 
 ## Differentiators
 
-1. **No token loans** — We work on retainer. The client provides liquidity, we manage it with full visibility.
-2. **Quantitative approach** — Every strategy is modeled, backtested, and calibrated. Parameters are data, not opinions.
-3. **Battle-tested systems** — Redundant infrastructure, automated failovers, 99.9% uptime through volatility spikes and chain outages.
-4. **Value retention** — Cross-chain arbitrage profits flow back to the protocol, not to random MEV bots.
+1. **Client control** — No token loans, no custody. The client owns the accounts and approves every parameter.
+2. **Open source** — Auditable software; every configuration is modeled and backtested before it is proposed.
+3. **Reliable operations** — Redundant infrastructure, automated failovers, 24/7 monitoring and kill switches.
+4. **Flat fee, no conflicts** — Everything the software earns stays in client accounts.
 
 ## Key Content
 
 ### Blog: Token Loan vs Retainer
-Detailed article comparing the two market making models. Covers how each works, incentive alignment, transparency, sell pressure risk, and when each model makes sense. Available at /blog/loan-vs-retainer.
+Detailed article comparing lending tokens to a market maker with keeping them and retaining an operator. Covers how each works, incentive alignment, transparency, sell pressure risk, and when each model makes sense. Available at /blog/loan-vs-retainer.
 
 ### Comparison Page
-Side-by-side comparison table of loan model vs retainer model across 8 dimensions: how it works, token custody, incentive alignment, transparency, sell pressure risk, contract flexibility, upfront cost, and best use case. Available at /compare.
+Side-by-side comparison table of token loan vs self-custody retainer across 8 dimensions: how it works, token custody, incentive alignment, transparency, sell pressure risk, contract flexibility, upfront cost, and best use case. Available at /compare.
 
 ## Contact
 
@@ -76,4 +78,4 @@ Side-by-side comparison table of loan model vs retainer model across 8 dimension
 - / — Landing page (services, comparison toggle, process, why liquid, transparency dashboard, FAQ)
 - /blog — Blog index
 - /blog/loan-vs-retainer — Article: Token Loan vs Retainer
-- /compare — Loan Model vs Retainer Model comparison page
+- /compare — Token loan vs self-custody retainer comparison page

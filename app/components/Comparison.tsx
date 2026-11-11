@@ -270,7 +270,7 @@ export default function Comparison() {
           The <span className="lowercase">liquid.</span> difference
         </h2>
         <p className="text-zinc-400 max-w-2xl mx-auto mb-12 leading-relaxed text-center">
-          Toggle to see what changes when we&apos;re in the picture.
+          Toggle to see what changes when the software is running on your accounts.
         </p>
 
         <Toggle active={withLiquid} onToggle={() => setWithLiquid((v) => !v)} />

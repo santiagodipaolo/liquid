@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Token Loan vs Retainer: Choosing the Right Market Making Model",
+  title: "Token Loan vs Retainer: Choosing How to Get Liquidity for Your Token",
   description:
     "Most market makers ask for a token loan upfront. Here's what that actually means for your project, and why a retainer model might be a better fit.",
   openGraph: {
     title: "Token Loan vs Retainer | liquid. blog",
     description:
-      "What the token loan model really means for your project, and why we chose a different path.",
+      "What the token loan model really means for your project, and the self-custody alternative.",
     type: "article",
     publishedTime: "2026-03-06",
   },
@@ -18,7 +18,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "Token Loan vs Retainer: Choosing the Right Market Making Model",
+    "Token Loan vs Retainer: Choosing How to Get Liquidity for Your Token",
   datePublished: "2026-03-06",
   author: { "@type": "Organization", name: "Liquid" },
   publisher: { "@type": "Organization", name: "Liquid" },
@@ -44,15 +44,16 @@ export default function LoanVsRetainerPost() {
         </div>
 
         <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-8 leading-tight">
-          Token loan vs retainer: choosing the right market making model
+          Token loan vs retainer: choosing how to get liquidity for your token
         </h1>
 
         <article className="prose-liquid space-y-6 text-zinc-400 leading-relaxed">
           <p>
-            If you&apos;re a token issuer or protocol looking for a market
-            maker, you&apos;ll run into two models pretty quickly: the token
-            loan model and the retainer model. Most firms push the loan. We
-            think that&apos;s worth questioning.
+            If you&apos;re a token issuer or protocol looking for liquidity,
+            you&apos;ll run into two models pretty quickly: lend your tokens to
+            a market maker, or keep them and pay someone a retainer to run
+            market making software on your own accounts. Most firms push the
+            loan. We think that&apos;s worth questioning.
           </p>
 
           <h2 className="text-xl font-semibold text-white pt-4">
@@ -95,20 +96,22 @@ export default function LoanVsRetainerPost() {
           </p>
 
           <h2 className="text-xl font-semibold text-white pt-4">
-            How the retainer model works
+            How the self-custody retainer works
           </h2>
           <p>
-            With a retainer, you pay a fixed fee for the market making service.
-            You provide the liquidity, and the market maker deploys and manages
-            it on your behalf. There&apos;s no loan, no option, no free tokens
-            changing hands. The key difference: full visibility into every
-            position and trade, in real time.
+            Your tokens and capital stay in exchange accounts and wallets you
+            own. You hire an operator for a fixed monthly fee to set up and run
+            open-source market making software on those accounts. The operator
+            proposes the parameters, you approve them, and the operator&apos;s
+            API keys can trade but never withdraw. There&apos;s no loan, no
+            option, no tokens changing hands, and full visibility into every
+            trade in real time.
           </p>
           <p>
-            The relationship is simpler. You&apos;re paying for a service, not
-            giving away an asset and hoping it comes back in good shape. The
-            market maker&apos;s job is to deliver tight spreads, deep books,
-            and stable markets. Full stop.
+            The relationship is simpler. You&apos;re paying for software
+            operations, not giving away an asset and hoping it comes back in
+            good shape. The operator&apos;s job is to keep the software running
+            well within the limits you set. Full stop.
           </p>
 
           <h2 className="text-xl font-semibold text-white pt-4">
@@ -138,14 +141,14 @@ export default function LoanVsRetainerPost() {
                 <tr className="border-b border-zinc-800/50">
                   <td className="py-3 pr-6 text-zinc-500">Token custody</td>
                   <td className="py-3 pr-6">Given for free, used at MM&apos;s discretion</td>
-                  <td className="py-3">You provide them, MM manages with full transparency</td>
+                  <td className="py-3">Stay in your accounts; operator keys can&apos;t withdraw</td>
                 </tr>
                 <tr className="border-b border-zinc-800/50">
                   <td className="py-3 pr-6 text-zinc-500">
                     Incentive alignment
                   </td>
                   <td className="py-3 pr-6">MM profits from option/inventory</td>
-                  <td className="py-3">MM paid for market quality</td>
+                  <td className="py-3">Operator paid a flat fee, no position</td>
                 </tr>
                 <tr className="border-b border-zinc-800/50">
                   <td className="py-3 pr-6 text-zinc-500">Transparency</td>
@@ -155,7 +158,7 @@ export default function LoanVsRetainerPost() {
                 <tr className="border-b border-zinc-800/50">
                   <td className="py-3 pr-6 text-zinc-500">Sell pressure</td>
                   <td className="py-3 pr-6">Possible (hedging, option exercise)</td>
-                  <td className="py-3">None from MM</td>
+                  <td className="py-3">None from the operator</td>
                 </tr>
                 <tr>
                   <td className="py-3 pr-6 text-zinc-500">Typical term</td>
@@ -170,16 +173,17 @@ export default function LoanVsRetainerPost() {
             Why we chose the retainer model
           </h2>
           <p>
-            We want to be in a position where the only way we succeed is by
-            making your markets better. No option upside, no inventory to
-            manage on the side, no conflicting incentives. We get paid to
-            deliver results, and you get full visibility into everything we
-            do through a real-time dashboard.
+            We don&apos;t want to be your market maker. We want to run the
+            software well while you keep the tokens, the accounts and the
+            final say. No option upside, no inventory, no position in your
+            token, no conflicting incentives. We get a flat fee, and you get
+            full visibility into everything the software does through a
+            real-time dashboard.
           </p>
           <p>
-            That&apos;s it. We think the best market making relationships are
-            the ones where both sides know exactly what&apos;s happening and
-            why.
+            That&apos;s it. We think the best liquidity setups are the ones
+            where you stay in control and both sides know exactly what&apos;s
+            happening and why.
           </p>
 
           <h2 className="text-xl font-semibold text-white pt-4">

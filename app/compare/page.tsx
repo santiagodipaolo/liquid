@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Loan Model vs Retainer Model | Market Making Comparison",
+  title: "Token Loan vs Self-Custody Retainer | Liquidity Models Compared",
   description:
-    "Side-by-side comparison of the two most common market making models. Understand the trade-offs before choosing a liquidity partner.",
+    "Side-by-side comparison: lending tokens to a market maker vs running market making on your own accounts with a retained operator. Understand the trade-offs first.",
   openGraph: {
     title: "Loan vs Retainer | liquid.",
     description:
-      "Side-by-side comparison of market making models. Token loan vs retainer, explained.",
+      "Token loan to a market maker vs your own accounts with a retained operator, explained.",
   },
 };
 
@@ -17,18 +17,18 @@ const rows = [
     label: "How it works",
     loan: "You give the market maker a large token allocation for free. They use it as inventory and return it (minus options) after 12-24 months.",
     retainer:
-      "You pay a monthly fee and provide the liquidity. The market maker manages it under your full visibility, with every position and trade on a real-time dashboard.",
+      "The liquidity stays in exchange accounts and wallets you own. You pay an operator a flat monthly fee to run open-source software on them, under parameters you approve, with every trade on a real-time dashboard.",
   },
   {
     label: "Your tokens",
     loan: "Given away for free. In someone else's hands for the duration of the contract, used at their discretion.",
-    retainer: "You provide them for market making, but you see exactly what's happening with them at all times.",
+    retainer: "Never leave your accounts. The operator's API keys can trade but not withdraw, and you can revoke them at any time.",
   },
   {
     label: "Incentive alignment",
     loan: "The MM profits from the option and from managing inventory they got for free. Their upside isn't directly tied to your market quality.",
     retainer:
-      "The MM gets paid to deliver tight spreads and deep books. That's the entire job description.",
+      "The operator earns a flat fee for running the software well. No option, no inventory, no position in your token.",
   },
   {
     label: "Transparency",
@@ -39,7 +39,7 @@ const rows = [
   {
     label: "Sell pressure risk",
     loan: "The MM may hedge by shorting your token, or exercise options into sell pressure. You might not know it's happening.",
-    retainer: "The MM has no incentive to sell or short. They're paid a retainer, not profiting from your token movements.",
+    retainer: "The operator holds none of your token and has nothing to hedge. Every sale comes from your own approved configuration, visible on your dashboard.",
   },
   {
     label: "Contract flexibility",
@@ -56,7 +56,7 @@ const rows = [
     label: "Best for",
     loan: "Very early projects with no budget and no other options.",
     retainer:
-      "Any project with treasury, funding, or revenue that wants control and transparency.",
+      "Any project with treasury, funding, or revenue that wants custody, control and transparency.",
   },
 ];
 
@@ -72,12 +72,12 @@ export default function ComparePage() {
         </Link>
 
         <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4">
-          Loan model vs retainer model
+          Token loan vs self-custody retainer
         </h1>
         <p className="text-lg text-zinc-400 max-w-2xl mb-16 leading-relaxed">
-          Two ways to work with a market maker. One gives away your tokens and
-          hopes for the best. The other pays for a service and keeps full
-          control.
+          Two ways to get liquidity for your token. One hands your tokens to a
+          market maker and hopes for the best. The other keeps them in your own
+          accounts and pays an operator to run the software.
         </p>
 
         {/* Comparison table - desktop */}
@@ -100,7 +100,7 @@ export default function ComparePage() {
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-blue-500" />
                     <span className="text-blue-400 font-semibold">
-                      Retainer model
+                      Self-custody retainer
                     </span>
                   </div>
                 </th>
@@ -165,11 +165,11 @@ export default function ComparePage() {
             Our take
           </h2>
           <p className="text-zinc-400 leading-relaxed mb-6">
-            We work exclusively on retainer. We think it&apos;s the only model
-            where the market maker&apos;s success is fully tied to yours. No
-            token loans, no options, no inventory games. You pay for a service,
-            you provide the liquidity, and you see everything we do with it in
-            real time.
+            We work exclusively on retainer, and we are not your market maker.
+            You own the accounts and the capital and approve every parameter;
+            we set up, operate and monitor open-source software on them. No
+            token loans, no options, no custody, no trading for our own
+            account. You see everything the software does in real time.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link

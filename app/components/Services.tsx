@@ -1,27 +1,27 @@
 const columns = [
   {
     tag: "CEX",
-    title: "Order Book Market Making",
+    title: "Order Book Operations",
     items: [
       {
         name: "Algorithmic Quoting",
         description:
-          "We place and update bid/ask quotes automatically. Our algorithms read volatility, track inventory, and adjust continuously. Not once a minute. All the time.",
+          "We deploy and configure open-source quoting software on your exchange accounts. It places and updates bids and asks continuously, within the spread, size and inventory limits you approve.",
       },
       {
         name: "Tight Spread Management",
         description:
-          "We keep spreads tight across the full depth of the book. Better prices for traders, better fill rates for you.",
+          "We recommend spread and depth settings from data, you sign off, and we monitor the book against those targets and flag drift.",
       },
       {
         name: "Multi-Exchange Coverage",
         description:
-          "We run on multiple exchanges at once with shared risk limits and coordinated pricing. One strategy, consistent execution everywhere.",
+          "The same configuration running across every exchange where you hold accounts, with shared risk limits you define.",
       },
       {
         name: "24/7 Operations",
         description:
-          "Markets don't close, and neither do we. Automated systems with monitoring, failovers, and live dashboards running around the clock.",
+          "Markets don't close. We monitor the software around the clock, with alerts, kill switches, failovers and a live dashboard you can see.",
       },
     ],
   },
@@ -32,7 +32,7 @@ const columns = [
       {
         name: "Concentrated Liquidity Positions",
         description:
-          "We deploy capital into concentrated ranges on AMMs. Tighter ranges mean more fees captured per dollar of liquidity deployed.",
+          "Your liquidity, from your wallets, placed in concentrated ranges on AMMs. Tighter ranges mean more fees captured per dollar deployed.",
       },
       {
         name: "Dynamic Band Management",
@@ -42,12 +42,12 @@ const columns = [
       {
         name: "Multi-Chain Deployment",
         description:
-          "Same strategy running across L2s simultaneously. Coordinated pricing, less fragmentation, same experience for traders on every chain.",
+          "The same approved configuration running across L2s at once. Less fragmentation, same experience for traders on every chain.",
       },
       {
-        name: "Cross-Chain Arbitrage",
+        name: "Cross-Chain Price Alignment",
         description:
-          "When prices drift between chains, we capture the difference before someone else does. That value stays in your ecosystem, not a random MEV bot's.",
+          "When prices drift between chains, software running on your wallets closes the gap. The proceeds land in your accounts, not a random MEV bot's.",
       },
     ],
   },
@@ -61,8 +61,9 @@ export default function Services() {
           What we do
         </h2>
         <p className="text-zinc-400 max-w-2xl mb-16 leading-relaxed">
-          We make markets on centralized exchanges and manage liquidity across
-          DeFi. Both sides, one team.
+          We set up and operate liquidity software for you, on centralized
+          exchanges and across DeFi. Your accounts, your capital, your sign-off.
+          Our software operations.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8">

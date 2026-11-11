@@ -18,29 +18,29 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Liquid | Liquidity Infrastructure — CEX & DEX",
+    default: "Liquid | Managed Liquidity Operations — CEX & DEX",
     template: "%s | Liquid",
   },
   description:
-    "Algorithmic market making and DEX liquidity management. Deep order books, tight spreads, concentrated liquidity positions, and cross-chain arbitrage for protocols and exchanges.",
+    "Managed liquidity operations for token issuers and protocols. We set up and run open-source market making and DEX liquidity software on your own accounts. You keep custody and approve every parameter. Flat retainer.",
   keywords: [
-    "crypto market making",
-    "algorithmic trading",
-    "order book market making",
+    "market making software",
+    "hummingbot operations",
+    "open-source market making",
+    "managed liquidity operations",
     "defi liquidity",
     "concentrated liquidity",
-    "liquidity provider",
     "token liquidity",
     "multi-chain liquidity",
     "cross-chain arbitrage",
-    "CEX market making",
+    "self-custody market making",
     "DEX liquidity management",
     "liquidity strategy",
   ],
   openGraph: {
-    title: "Liquid | Liquidity Infrastructure — CEX & DEX",
+    title: "Liquid | Managed Liquidity Operations — CEX & DEX",
     description:
-      "Algorithmic market making and DEX liquidity management. Deep order books, tight spreads, every chain.",
+      "Open-source liquidity software, run on your accounts. You keep custody. We operate it.",
     url: "https://liquid.xyz",
     siteName: "Liquid",
     type: "website",
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Liquid | Liquidity Infrastructure — CEX & DEX",
+    title: "Liquid | Managed Liquidity Operations — CEX & DEX",
     description:
-      "Algorithmic market making and DEX liquidity management. Deep order books, tight spreads, every chain.",
+      "Open-source liquidity software, run on your accounts. You keep custody. We operate it.",
   },
   robots: {
     index: true,
@@ -66,7 +66,7 @@ const organizationJsonLd = {
   name: "Liquid",
   url: "https://liquid.xyz",
   description:
-    "Liquidity infrastructure firm providing algorithmic market making on centralized exchanges and active liquidity management across DeFi — deep order books, tight spreads, every chain.",
+    "Liquidity operations firm. Liquid sets up, operates and monitors open-source market making and DEX liquidity software on accounts owned by its clients. Liquid does not trade for its own account, take token loans or hold client funds.",
   sameAs: [],
 };
 
@@ -77,9 +77,9 @@ const serviceJsonLd = {
     "@type": "Organization",
     name: "Liquid",
   },
-  serviceType: "Liquidity Infrastructure",
+  serviceType: "Software operations and technical services",
   description:
-    "Full-spectrum liquidity services including CEX algorithmic market making, DEX concentrated liquidity management, multi-chain deployment, and cross-chain arbitrage infrastructure.",
+    "Setup, operation, monitoring and reporting for open-source liquidity software (CEX order book quoting, DEX concentrated liquidity, multi-chain deployment) running on client-owned accounts under client-approved parameters, for a flat retainer.",
   areaServed: "Worldwide",
 };
 

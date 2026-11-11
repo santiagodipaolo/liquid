@@ -1,38 +1,38 @@
 # Liquid
 
-> Full-spectrum liquidity infrastructure — algorithmic market making on centralized exchanges and active liquidity management across DeFi.
+> Managed liquidity operations. Liquid sets up and runs open-source market making and DEX liquidity software on accounts its clients own. Clients keep custody and approve every parameter.
 
 ## About
 
-Liquid is a liquidity infrastructure firm built by experienced quants and systems engineers. We provide end-to-end liquidity solutions for protocols, token issuers, and exchanges — covering both CEX order book market making and DEX liquidity management.
+Liquid is a technical services firm built by quants and systems engineers. We set up, operate and monitor open-source liquidity software for protocols, token issuers and exchanges, covering CEX order book quoting and DEX liquidity management. Liquid is not a market maker: clients own the accounts, provide the capital and approve the parameters.
 
 ## Services
 
-### CEX — Order Book Market Making
-- **Algorithmic Quoting**: Automated bid/ask placement using proprietary algorithms that adapt to volatility, inventory risk, and market microstructure.
-- **Tight Spread Management**: Continuous spread optimization across order book levels while managing adverse selection and P&L.
-- **Multi-Exchange Coverage**: Simultaneous market making across major centralized exchanges with unified risk management.
+### CEX — Order Book Operations
+- **Algorithmic Quoting**: Open-source quoting software on the client's exchange accounts, placing and updating bids and asks within client-approved spread, size and inventory limits.
+- **Tight Spread Management**: Data-driven spread and depth recommendations, client sign-off, and monitoring against the approved targets.
+- **Multi-Exchange Coverage**: The same approved configuration across every exchange where the client holds accounts, with shared client-defined risk limits.
 - **24/7 Operations**: Round-the-clock automated infrastructure with real-time monitoring and failover systems.
 
 ### DEX — Liquidity Management
-- **Concentrated Liquidity Positions**: Strategic deployment in AMM pools, maximizing capital efficiency within targeted price ranges.
+- **Concentrated Liquidity Positions**: Client liquidity, from client wallets, placed in concentrated AMM ranges for capital efficiency.
 - **Dynamic Band Management**: Active rebalancing through wide and tight bands for depth, stability, and smooth price discovery.
 - **Multi-Chain Deployment**: Simultaneous deployment across L2 networks with unified strategy logic and coordinated pricing.
-- **Cross-Chain Arbitrage**: Infrastructure keeping prices aligned across chains and capturing value internally for the protocol.
+- **Cross-Chain Price Alignment**: Software on client wallets keeping prices aligned across chains; proceeds stay in client accounts.
 
 ## Process
 
-- **Phase I — Design**: Liquidity strategy framework (CEX or DEX), band/spread configuration, and risk parameters.
-- **Phase II — Execution**: Deployment across target exchanges and chains, automated bot infrastructure, arbitrage setup, and ongoing monitoring.
+- **Phase I — Design**: Proposed configuration (CEX or DEX), band/spread settings and risk limits, approved in writing by the client.
+- **Phase II — Execution**: Deployment on client accounts across target exchanges and chains, 24/7 operation and monitoring, reporting.
 
 ## Business Model
 
-Retainer only. No token loans. The client provides the liquidity, Liquid manages it with full transparency via real-time dashboards. No free token allocations, no options, no hidden inventory management.
+Flat retainer only. No token loans, no options, no custody. The client owns the accounts and capital and approves every parameter; Liquid operates the software with full transparency via real-time dashboards. Liquid never trades for its own account or holds a position in client tokens.
 
 ## Pages
 
-- /compare — Loan Model vs Retainer Model side-by-side comparison
-- /blog — Insights on market making and liquidity
+- /compare — Token loan vs self-custody retainer, side by side
+- /blog — Insights on token liquidity
 - /blog/loan-vs-retainer — Token Loan vs Retainer: detailed comparison article
 
 For full documentation, see /llms-full.txt

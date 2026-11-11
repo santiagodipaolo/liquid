@@ -12,7 +12,7 @@ export default function LogoCarousel() {
   return (
     <section className="border-y border-zinc-800/50 py-12" aria-label="In collaboration with">
       <p className="text-center text-sm text-zinc-600 uppercase tracking-wider mb-8">
-        Trusted by
+        In collaboration with
       </p>
       <div className="logo-marquee">
         <div className="logo-track">

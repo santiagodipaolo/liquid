@@ -6,17 +6,17 @@ const phases = [
       {
         name: "Long-Term Liquidity Framework",
         description:
-          "We map out how your liquidity should look over time. Where the depth sits, what price levels matter, how the corridor evolves.",
+          "We map out how your liquidity could look over time: where the depth sits and how it evolves. You decide what goes live.",
       },
       {
-        name: "Short-Term Backstop",
+        name: "Near-Price Depth",
         description:
-          "A reactive layer that sits tight around the current price. It absorbs sell pressure, lets real demand move things, and kicks in when bands get hit.",
+          "A layer of depth close to the current price so normal-size trades fill without slippage, while real supply and demand still set the price.",
       },
       {
         name: "Dynamic Band Configuration",
         description:
-          "We set up two bands: a ~5% wide band for depth, and a ~2% tight band for stability. Together they give you controlled, smooth markets.",
+          "We propose two bands, a ~5% wide band for depth and a ~2% tight band near the price, and you approve the final settings.",
       },
     ],
   },
@@ -27,17 +27,17 @@ const phases = [
       {
         name: "Multi-Chain Deployment",
         description:
-          "We go live on your target L2s with the same strategy logic running everywhere. Pricing stays coordinated, liquidity stays concentrated.",
+          "The software goes live on your accounts across your target L2s, with the same approved configuration everywhere.",
       },
       {
         name: "Automated Bot Infrastructure",
         description:
-          "Bots handle rotation, rebalancing, and band adjustments 24/7. No manual intervention unless something truly unexpected happens.",
+          "Open-source bots handle rotation and rebalancing 24/7 within your limits. We monitor, alert, and pause the software if something unexpected happens.",
       },
       {
-        name: "Cross-Chain Arbitrage",
+        name: "Cross-Chain Price Alignment",
         description:
-          "A dedicated system watches for price gaps between chains and closes them before external actors can. The profit stays inside your protocol.",
+          "Software on your wallets watches for price gaps between chains and closes them before external actors can. The proceeds stay in your accounts.",
       },
     ],
   },
@@ -54,8 +54,8 @@ export default function Process() {
           How it works
         </h2>
         <p className="text-zinc-400 max-w-2xl mb-16 leading-relaxed">
-          Two phases. First we figure out the right strategy, then we build and
-          run it.
+          Two phases. First we propose a configuration and you approve it.
+          Then we deploy the software on your accounts and operate it.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8">

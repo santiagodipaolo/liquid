@@ -23,9 +23,10 @@ export default function Hero() {
       </h1>
 
       <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-10 leading-relaxed relative">
-        Algorithmic market making and DEX liquidity management.
+        Open-source market making and DEX liquidity software, run on your
+        own accounts.
         <span className="block mt-1">
-          Deep order books, tight spreads, every chain.
+          You keep custody and approve every parameter. We operate it.
         </span>
       </p>
 
