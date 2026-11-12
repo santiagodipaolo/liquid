@@ -3,7 +3,7 @@ import LogoCarousel from "./components/LogoCarousel";
 import Services from "./components/Services";
 import Comparison from "./components/Comparison";
 import Process from "./components/Process";
-import WhyLiquid from "./components/WhyLiquid";
+import WhyWeibull from "./components/WhyWeibull";
 import Transparency from "./components/Transparency";
 import FAQ from "./components/FAQ";
 import CTA from "./components/CTA";
@@ -16,7 +16,7 @@ export default function Home() {
       <Services />
       <Comparison />
       <Process />
-      <WhyLiquid />
+      <WhyWeibull />
       <Transparency />
       <FAQ />
       <CTA />

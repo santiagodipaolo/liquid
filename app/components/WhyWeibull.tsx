@@ -21,12 +21,12 @@ const reasons = [
   },
 ];
 
-export default function WhyLiquid() {
+export default function WhyWeibull() {
   return (
     <section id="about" className="py-20 md:py-28 border-t border-zinc-800/50">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-white mb-16">
-          Why liquid.
+          Why weibull.
         </h2>
         <div className="grid md:grid-cols-2 gap-x-16 gap-y-12">
           {reasons.map((r) => (

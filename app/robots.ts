@@ -24,6 +24,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://liquid.xyz/sitemap.xml",
+    sitemap: "https://weibull.capital/sitemap.xml",
   };
 }

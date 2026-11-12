@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Most market makers ask for a token loan upfront. Here's what that actually means for your project, and why a retainer model might be a better fit.",
   openGraph: {
-    title: "Token Loan vs Retainer | liquid. blog",
+    title: "Token Loan vs Retainer | weibull. blog",
     description:
       "What the token loan model really means for your project, and the self-custody alternative.",
     type: "article",
@@ -20,8 +20,8 @@ const articleJsonLd = {
   headline:
     "Token Loan vs Retainer: Choosing How to Get Liquidity for Your Token",
   datePublished: "2026-03-06",
-  author: { "@type": "Organization", name: "Liquid" },
-  publisher: { "@type": "Organization", name: "Liquid" },
+  author: { "@type": "Organization", name: "Weibull" },
+  publisher: { "@type": "Organization", name: "Weibull" },
   description:
     "Most market makers ask for a token loan upfront. Here's what that actually means for your project, and why a retainer model might be a better fit.",
 };

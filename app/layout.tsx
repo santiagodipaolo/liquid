@@ -18,8 +18,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Liquid | Managed Liquidity Operations — CEX & DEX",
-    template: "%s | Liquid",
+    default: "Weibull | Managed Liquidity Operations — CEX & DEX",
+    template: "%s | Weibull",
   },
   description:
     "Managed liquidity operations for token issuers and protocols. We set up and run open-source market making and DEX liquidity software on your own accounts. You keep custody and approve every parameter. Flat retainer.",
@@ -38,17 +38,17 @@ export const metadata: Metadata = {
     "liquidity strategy",
   ],
   openGraph: {
-    title: "Liquid | Managed Liquidity Operations — CEX & DEX",
+    title: "Weibull | Managed Liquidity Operations — CEX & DEX",
     description:
       "Open-source liquidity software, run on your accounts. You keep custody. We operate it.",
-    url: "https://liquid.xyz",
-    siteName: "Liquid",
+    url: "https://weibull.capital",
+    siteName: "Weibull",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Liquid | Managed Liquidity Operations — CEX & DEX",
+    title: "Weibull | Managed Liquidity Operations — CEX & DEX",
     description:
       "Open-source liquidity software, run on your accounts. You keep custody. We operate it.",
   },
@@ -57,16 +57,16 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true },
   },
-  metadataBase: new URL("https://liquid.xyz"),
+  metadataBase: new URL("https://weibull.capital"),
 };
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Liquid",
-  url: "https://liquid.xyz",
+  name: "Weibull",
+  url: "https://weibull.capital",
   description:
-    "Liquidity operations firm. Liquid sets up, operates and monitors open-source market making and DEX liquidity software on accounts owned by its clients. Liquid does not trade for its own account, take token loans or hold client funds.",
+    "Liquidity operations firm. Weibull sets up, operates and monitors open-source market making and DEX liquidity software on accounts owned by its clients. Weibull does not trade for its own account, take token loans or hold client funds.",
   sameAs: [],
 };
 
@@ -75,7 +75,7 @@ const serviceJsonLd = {
   "@type": "Service",
   provider: {
     "@type": "Organization",
-    name: "Liquid",
+    name: "Weibull",
   },
   serviceType: "Software operations and technical services",
   description:

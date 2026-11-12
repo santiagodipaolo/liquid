@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Side-by-side comparison: lending tokens to a market maker vs running market making on your own accounts with a retained operator. Understand the trade-offs first.",
   openGraph: {
-    title: "Loan vs Retainer | liquid.",
+    title: "Loan vs Retainer | weibull.",
     description:
       "Token loan to a market maker vs your own accounts with a retained operator, explained.",
   },

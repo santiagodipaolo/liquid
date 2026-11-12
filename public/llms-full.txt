@@ -1,17 +1,17 @@
-# Liquid — Full Documentation
+# Weibull — Full Documentation
 
-> Managed liquidity operations. Liquid sets up and runs open-source market making and DEX liquidity software on accounts its clients own. Clients keep custody and approve every parameter.
+> Managed liquidity operations. Weibull sets up and runs open-source market making and DEX liquidity software on accounts its clients own. Clients keep custody and approve every parameter.
 
 ## About
 
-Liquid is a technical services firm built by quants and systems engineers. We set up, operate and monitor open-source liquidity software for protocols, token issuers and exchanges, covering CEX order book quoting and DEX liquidity management. Liquid is not a market maker: clients own the accounts, provide the capital and approve the parameters. We work exclusively on a flat retainer (no token loans).
+Weibull is a technical services firm built by quants and systems engineers. We set up, operate and monitor open-source liquidity software for protocols, token issuers and exchanges, covering CEX order book quoting and DEX liquidity management. Weibull is not a market maker: clients own the accounts, provide the capital and approve the parameters. We work exclusively on a flat retainer (no token loans).
 
 ## Business Model
 
 We operate on a flat retainer. We do not ask for token loans and we are not the client's market maker. Clients own the exchange accounts and wallets, provide the capital, and approve every parameter; we set up, operate and monitor open-source software on those accounts. This means:
-- No token allocations to Liquid
+- No token allocations to Weibull
 - No custody: API keys can trade but not withdraw, revocable at any time
-- No trading for Liquid's own account, no position in client tokens
+- No trading for Weibull's own account, no position in client tokens
 - No option agreements on client tokens
 - No hidden inventory management
 - Full transparency via real-time dashboards
@@ -70,8 +70,8 @@ Side-by-side comparison table of token loan vs self-custody retainer across 8 di
 
 ## Contact
 
-- Website: https://liquid.xyz
-- Email: hello@liquid.xyz
+- Website: https://weibull.capital
+- Email: hello@weibull.capital
 
 ## Pages
 

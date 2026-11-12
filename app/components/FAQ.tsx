@@ -1,6 +1,6 @@
 const faqs = [
   {
-    question: "What does Liquid do?",
+    question: "What does Weibull do?",
     answer:
       "We set up and operate open-source liquidity software on your own accounts. On centralized exchanges, that's quoting software that keeps order books deep and spreads tight. On DEXs, it's concentrated liquidity positions, band rebalancing and cross-chain price alignment. You own the accounts and approve the parameters; we run, monitor and report on it 24/7.",
   },
@@ -25,9 +25,9 @@ const faqs = [
       "Two phases. First, we propose a configuration: liquidity structure, bands, risk limits. You review and approve it in writing. Then we deploy the software on your accounts, monitor it around the clock, and you get a dashboard showing everything in real time. Any later parameter change also goes through your approval.",
   },
   {
-    question: "Is Liquid my market maker?",
+    question: "Is Weibull my market maker?",
     answer:
-      "No. Liquid is a technical services provider. You own the exchange accounts and wallets, provide the capital, and approve the trading parameters; we set up, operate and monitor open-source software on your behalf for a flat retainer. We never hold your funds, trade for our own account, or accept instructions to inflate volume or target a price.",
+      "No. Weibull is a technical services provider. You own the exchange accounts and wallets, provide the capital, and approve the trading parameters; we set up, operate and monitor open-source software on your behalf for a flat retainer. We never hold your funds, trade for our own account, or accept instructions to inflate volume or target a price.",
   },
 ];
 

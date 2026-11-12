@@ -10,7 +10,7 @@ export default function Footer() {
               href="/"
               className="text-lg font-semibold tracking-tight text-white"
             >
-              liquid.
+              weibull.
             </Link>
             <div className="flex flex-wrap gap-6 text-sm text-zinc-500">
               <a
@@ -63,7 +63,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-6 border-t border-zinc-800/50 text-center text-sm text-zinc-600">
-          &copy; {new Date().getFullYear()} Liquid. All rights reserved.
+          &copy; {new Date().getFullYear()} Weibull. All rights reserved.
         </div>
       </div>
     </footer>

@@ -21,7 +21,7 @@ function Toggle({
           !active ? "text-red-400" : "text-zinc-600"
         }`}
       >
-        Without liquid.
+        Without weibull.
       </span>
       <div className="relative w-14 h-7 rounded-full bg-zinc-800 border border-zinc-700 transition-colors duration-300">
         <div
@@ -37,7 +37,7 @@ function Toggle({
           active ? "text-blue-400" : "text-zinc-600"
         }`}
       >
-        With liquid.
+        With weibull.
       </span>
     </button>
   );
@@ -139,7 +139,7 @@ function PriceSpreadChart({ active }: { active: boolean }) {
       <h3 className="text-sm font-semibold text-white mb-1">Price Stability</h3>
       <p className="text-xs text-zinc-500 mb-4">Volatility envelope</p>
       <div className="relative h-28">
-        {/* Without Liquid — volatile */}
+        {/* Without Weibull — volatile */}
         <svg
           viewBox="0 0 300 100"
           className={`absolute inset-0 w-full h-full transition-opacity duration-[600ms] ${
@@ -151,7 +151,7 @@ function PriceSpreadChart({ active }: { active: boolean }) {
           <path d={volatileLower} fill="none" stroke="rgba(239,68,68,0.2)" strokeWidth="1" />
           <path d={volatilePath} fill="none" stroke="rgba(239,68,68,0.7)" strokeWidth="2" />
         </svg>
-        {/* With Liquid — smooth */}
+        {/* With Weibull — smooth */}
         <svg
           viewBox="0 0 300 100"
           className={`absolute inset-0 w-full h-full transition-opacity duration-[600ms] ${
@@ -261,24 +261,24 @@ function KeyMetrics({ active }: { active: boolean }) {
 
 /* ── Main Component ── */
 export default function Comparison() {
-  const [withLiquid, setWithLiquid] = useState(false);
+  const [withWeibull, setWithWeibull] = useState(false);
 
   return (
     <section className="py-20 md:py-28 border-t border-zinc-800/50">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-white mb-4 text-center">
-          The <span className="lowercase">liquid.</span> difference
+          The <span className="lowercase">weibull.</span> difference
         </h2>
         <p className="text-zinc-400 max-w-2xl mx-auto mb-12 leading-relaxed text-center">
           Toggle to see what changes when the software is running on your accounts.
         </p>
 
-        <Toggle active={withLiquid} onToggle={() => setWithLiquid((v) => !v)} />
+        <Toggle active={withWeibull} onToggle={() => setWithWeibull((v) => !v)} />
 
         <div className="grid md:grid-cols-3 gap-6">
-          <OrderBookViz active={withLiquid} />
-          <PriceSpreadChart active={withLiquid} />
-          <KeyMetrics active={withLiquid} />
+          <OrderBookViz active={withWeibull} />
+          <PriceSpreadChart active={withWeibull} />
+          <KeyMetrics active={withWeibull} />
         </div>
       </div>
     </section>

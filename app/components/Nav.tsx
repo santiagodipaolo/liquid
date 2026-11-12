@@ -34,7 +34,7 @@ export default function Nav() {
           href="/"
           className="text-lg font-semibold tracking-tight text-white"
         >
-          liquid.
+          weibull.
         </Link>
 
         <div className="hidden md:flex items-center gap-8">

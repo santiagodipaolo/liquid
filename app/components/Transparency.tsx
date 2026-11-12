@@ -12,7 +12,7 @@ function DashboardMockup() {
       <div className="flex items-center justify-between px-5 py-3 border-b border-zinc-800/50">
         <div className="flex items-center gap-2">
           <span className="text-sm font-semibold tracking-tight text-white">
-            liquid.
+            weibull.
           </span>
           <span className="text-xs text-zinc-600">dashboard</span>
         </div>
