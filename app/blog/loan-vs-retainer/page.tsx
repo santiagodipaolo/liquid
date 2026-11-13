@@ -32,22 +32,22 @@ export default function LoanVsRetainerPost() {
       <div className="max-w-3xl mx-auto px-6">
         <Link
           href="/blog"
-          className="text-sm text-zinc-500 hover:text-white transition-colors mb-8 inline-block"
+          className="text-sm text-faint hover:text-ink transition-colors mb-8 inline-block"
         >
           ← Back to blog
         </Link>
 
-        <div className="flex items-center gap-3 text-xs text-zinc-500 mb-4">
+        <div className="flex items-center gap-3 text-xs text-faint mb-4">
           <time dateTime="2026-03-06">March 6, 2026</time>
-          <span className="text-zinc-700">·</span>
+          <span className="text-rule">·</span>
           <span>6 min read</span>
         </div>
 
-        <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-8 leading-tight">
+        <h1 className="text-3xl md:text-4xl font-normal text-ink mb-8 leading-tight">
           Token loan vs retainer: choosing how to get liquidity for your token
         </h1>
 
-        <article className="prose-liquid space-y-6 text-zinc-400 leading-relaxed">
+        <article className="prose-liquid space-y-6 text-soft leading-relaxed">
           <p>
             If you&apos;re a token issuer or protocol looking for liquidity,
             you&apos;ll run into two models pretty quickly: lend your tokens to
@@ -56,7 +56,7 @@ export default function LoanVsRetainerPost() {
             loan. We think that&apos;s worth questioning.
           </p>
 
-          <h2 className="text-xl font-semibold text-white pt-4">
+          <h2 className="text-xl font-bold text-ink pt-4">
             How the token loan model works
           </h2>
           <p>
@@ -71,7 +71,7 @@ export default function LoanVsRetainerPost() {
             that aren&apos;t obvious until you&apos;re in the middle of them.
           </p>
 
-          <h2 className="text-xl font-semibold text-white pt-4">
+          <h2 className="text-xl font-bold text-ink pt-4">
             The problem with handing over your tokens
           </h2>
           <p>
@@ -95,7 +95,7 @@ export default function LoanVsRetainerPost() {
             dumped. Smart traders know it&apos;s out there.
           </p>
 
-          <h2 className="text-xl font-semibold text-white pt-4">
+          <h2 className="text-xl font-bold text-ink pt-4">
             How the self-custody retainer works
           </h2>
           <p>
@@ -114,54 +114,54 @@ export default function LoanVsRetainerPost() {
             well within the limits you set. Full stop.
           </p>
 
-          <h2 className="text-xl font-semibold text-white pt-4">
+          <h2 className="text-xl font-bold text-ink pt-4">
             Side-by-side comparison
           </h2>
           <div className="overflow-x-auto -mx-6 px-6">
             <table className="w-full text-sm border-collapse">
               <thead>
-                <tr className="border-b border-zinc-800">
-                  <th className="text-left py-3 pr-6 text-zinc-500 font-medium">
+                <tr className="border-b border-rule">
+                  <th className="text-left py-3 pr-6 text-faint font-medium">
                     &nbsp;
                   </th>
-                  <th className="text-left py-3 pr-6 text-red-400 font-medium">
+                  <th className="text-left py-3 pr-6 text-[#9a3412] font-medium">
                     Token loan
                   </th>
-                  <th className="text-left py-3 text-blue-400 font-medium">
+                  <th className="text-left py-3 text-accent font-medium">
                     Retainer
                   </th>
                 </tr>
               </thead>
-              <tbody className="text-zinc-400">
-                <tr className="border-b border-zinc-800/50">
-                  <td className="py-3 pr-6 text-zinc-500">Upfront cost</td>
+              <tbody className="text-soft">
+                <tr className="border-b border-rule">
+                  <td className="py-3 pr-6 text-faint">Upfront cost</td>
                   <td className="py-3 pr-6">Token allocation (large)</td>
                   <td className="py-3">Fixed monthly fee</td>
                 </tr>
-                <tr className="border-b border-zinc-800/50">
-                  <td className="py-3 pr-6 text-zinc-500">Token custody</td>
+                <tr className="border-b border-rule">
+                  <td className="py-3 pr-6 text-faint">Token custody</td>
                   <td className="py-3 pr-6">Given for free, used at MM&apos;s discretion</td>
                   <td className="py-3">Stay in your accounts; operator keys can&apos;t withdraw</td>
                 </tr>
-                <tr className="border-b border-zinc-800/50">
-                  <td className="py-3 pr-6 text-zinc-500">
+                <tr className="border-b border-rule">
+                  <td className="py-3 pr-6 text-faint">
                     Incentive alignment
                   </td>
                   <td className="py-3 pr-6">MM profits from option/inventory</td>
                   <td className="py-3">Operator paid a flat fee, no position</td>
                 </tr>
-                <tr className="border-b border-zinc-800/50">
-                  <td className="py-3 pr-6 text-zinc-500">Transparency</td>
+                <tr className="border-b border-rule">
+                  <td className="py-3 pr-6 text-faint">Transparency</td>
                   <td className="py-3 pr-6">Usually limited</td>
                   <td className="py-3">Full dashboard access</td>
                 </tr>
-                <tr className="border-b border-zinc-800/50">
-                  <td className="py-3 pr-6 text-zinc-500">Sell pressure</td>
+                <tr className="border-b border-rule">
+                  <td className="py-3 pr-6 text-faint">Sell pressure</td>
                   <td className="py-3 pr-6">Possible (hedging, option exercise)</td>
                   <td className="py-3">None from the operator</td>
                 </tr>
                 <tr>
-                  <td className="py-3 pr-6 text-zinc-500">Typical term</td>
+                  <td className="py-3 pr-6 text-faint">Typical term</td>
                   <td className="py-3 pr-6">12-24 months locked</td>
                   <td className="py-3">Monthly, flexible</td>
                 </tr>
@@ -169,7 +169,7 @@ export default function LoanVsRetainerPost() {
             </table>
           </div>
 
-          <h2 className="text-xl font-semibold text-white pt-4">
+          <h2 className="text-xl font-bold text-ink pt-4">
             Why we chose the retainer model
           </h2>
           <p>
@@ -186,7 +186,7 @@ export default function LoanVsRetainerPost() {
             happening and why.
           </p>
 
-          <h2 className="text-xl font-semibold text-white pt-4">
+          <h2 className="text-xl font-bold text-ink pt-4">
             When does the loan model make sense?
           </h2>
           <p>
@@ -202,12 +202,12 @@ export default function LoanVsRetainerPost() {
             stage.
           </p>
 
-          <div className="border-t border-zinc-800/50 pt-8 mt-8">
-            <p className="text-zinc-500 text-sm">
+          <div className="border-t border-rule pt-8 mt-8">
+            <p className="text-faint text-sm">
               Want to talk about what model fits your project?{" "}
               <Link
                 href="/#contact"
-                className="text-blue-400 hover:text-blue-300 transition-colors"
+                className="text-accent hover:text-ink transition-colors"
               >
                 Get in touch
               </Link>

@@ -47,34 +47,34 @@ export default async function BlogIndex() {
   return (
     <section className="pt-32 pb-20 md:pb-28">
       <div className="max-w-3xl mx-auto px-6">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
+        <h1 className="text-4xl md:text-5xl font-normal text-ink mb-4">
           Blog
         </h1>
-        <p className="text-zinc-400 mb-16 leading-relaxed">
+        <p className="text-soft mb-16 leading-relaxed">
           How we think about liquidity, market structure, and building
           infrastructure that works.
         </p>
 
-        <div className="divide-y divide-zinc-800/50">
+        <div className="divide-y divide-rule">
           {posts.map((post) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
               className="block py-8 group"
             >
-              <div className="flex items-center gap-3 text-xs text-zinc-500 mb-3">
+              <div className="flex items-center gap-3 text-xs text-faint mb-3">
                 <time dateTime={post.date}>{formatDate(post.date)}</time>
                 {post.readTime && (
                   <>
-                    <span className="text-zinc-700">·</span>
+                    <span className="text-rule">·</span>
                     <span>{post.readTime}</span>
                   </>
                 )}
               </div>
-              <h2 className="text-xl font-semibold text-white mb-2 group-hover:text-blue-400 transition-colors">
+              <h2 className="text-xl font-bold text-ink mb-2 group-hover:text-accent transition-colors">
                 {post.title}
               </h2>
-              {post.excerpt && <p className="text-zinc-400 leading-relaxed">{post.excerpt}</p>}
+              {post.excerpt && <p className="text-soft leading-relaxed">{post.excerpt}</p>}
             </Link>
           ))}
         </div>
