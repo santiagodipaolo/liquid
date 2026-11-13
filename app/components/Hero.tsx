@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative flex flex-col items-center justify-center text-center px-6 pt-44 pb-12 md:pt-56 md:pb-16 overflow-hidden">
+    <section className="relative min-h-[100svh] flex flex-col items-center justify-center text-center px-6 pt-24 pb-16 overflow-hidden">
       {/* Primary blue glow */}
       <div
         className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[90%] h-[70%] pointer-events-none"
