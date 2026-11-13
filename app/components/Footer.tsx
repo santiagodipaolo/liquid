@@ -1,3 +1,4 @@
+import Logo from "./Logo";
 import Link from "next/link";
 
 export default function Footer() {
@@ -8,10 +9,9 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
             <Link
               href="/"
-              className="text-2xl md:text-[28px] font-semibold tracking-tight text-white"
-            >
-              weibull.
-            </Link>
+              aria-label="Weibull, home">
+          <Logo />
+        </Link>
             <div className="flex flex-wrap gap-6 text-sm text-zinc-500">
               <a
                 href="/#services"

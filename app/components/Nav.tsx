@@ -1,5 +1,7 @@
 "use client";
 
+import Logo from "./Logo";
+
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
@@ -32,9 +34,8 @@ export default function Nav() {
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link
           href="/"
-          className="text-2xl md:text-[28px] font-semibold tracking-tight text-white"
-        >
-          weibull.
+          aria-label="Weibull, home">
+          <Logo />
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
