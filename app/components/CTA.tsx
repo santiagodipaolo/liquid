@@ -16,12 +16,6 @@ export default function CTA() {
           >
             Email Us
           </a>
-          <a
-            href="#"
-            className="border border-zinc-700 text-zinc-300 px-8 py-3 rounded-full hover:border-zinc-500 hover:text-white transition-colors"
-          >
-            Book a Call
-          </a>
         </div>
       </div>
     </section>

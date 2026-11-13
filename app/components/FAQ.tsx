@@ -36,7 +36,7 @@ export default function FAQ() {
     <section id="faq" className="py-20 md:py-28 border-t border-zinc-800/50">
       <div className="max-w-3xl mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-white mb-16">
-          Frequently Asked Questions
+          Questions
         </h2>
         <div className="divide-y divide-zinc-800/50">
           {faqs.map((faq) => (

@@ -32,7 +32,7 @@ export default function Nav() {
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link
           href="/"
-          className="text-lg font-semibold tracking-tight text-white"
+          className="text-2xl md:text-[28px] font-semibold tracking-tight text-white"
         >
           weibull.
         </Link>

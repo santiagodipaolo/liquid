@@ -18,7 +18,7 @@ function DashboardMockup() {
         </div>
         <div className="flex items-center gap-2">
           <div className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-          <span className="text-xs text-zinc-500">All systems operational</span>
+          <span className="text-xs text-zinc-500">Example data</span>
         </div>
       </div>
 
@@ -116,19 +116,13 @@ export default function Transparency() {
   return (
     <section className="py-20 md:py-28 border-t border-zinc-800/50">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-          <span className="text-xs font-mono text-emerald-400 uppercase tracking-widest">
-            Live
-          </span>
-        </div>
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-white mb-4">
-          Radical transparency
+          What you see
         </h2>
         <p className="text-zinc-400 max-w-2xl mb-10 leading-relaxed">
-          Every client gets their own dashboard. Not a monthly PDF. A live view
-          of everything the software does on your accounts, updated in real
-          time.
+          Every client gets a dashboard of what the software does on their
+          accounts: positions, orders, fills and rebalances, as they happen.
+          The figures below are an example, not client data.
         </p>
 
         <DashboardMockup />

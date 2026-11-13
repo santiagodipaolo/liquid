@@ -10,7 +10,7 @@ const reasons = [
       "We run open-source software you can read and audit. Every configuration is modeled and backtested before we propose it, and nothing goes live without your approval.",
   },
   {
-    title: "Battle-tested systems",
+    title: "Built to stay up",
     description:
       "Redundant infrastructure, automated failovers, round-the-clock monitoring and kill switches, so volatility spikes and chain outages don't leave your book unattended.",
   },
