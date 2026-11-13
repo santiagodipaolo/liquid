@@ -66,15 +66,15 @@ export default function ComparePage() {
       <div className="max-w-5xl mx-auto px-6">
         <Link
           href="/"
-          className="text-sm text-faint hover:text-ink transition-colors mb-8 inline-block"
+          className="text-sm text-zinc-500 hover:text-white transition-colors mb-8 inline-block"
         >
           ← Home
         </Link>
 
-        <h1 className="text-3xl md:text-5xl font-normal text-ink mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4">
           Token loan vs self-custody retainer
         </h1>
-        <p className="text-lg text-soft max-w-2xl mb-16 leading-relaxed">
+        <p className="text-lg text-zinc-400 max-w-2xl mb-16 leading-relaxed">
           Two ways to get liquidity for your token. One hands your tokens to a
           market maker and hopes for the best. The other keeps them in your own
           accounts and pays an operator to run the software.
@@ -84,22 +84,22 @@ export default function ComparePage() {
         <div className="hidden md:block overflow-x-auto">
           <table className="w-full text-sm border-collapse">
             <thead>
-              <tr className="border-b border-rule">
-                <th className="text-left py-4 pr-8 w-1/5 text-faint font-medium">
+              <tr className="border-b border-zinc-800">
+                <th className="text-left py-4 pr-8 w-1/5 text-zinc-500 font-medium">
                   &nbsp;
                 </th>
                 <th className="text-left py-4 pr-8 w-2/5">
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-none bg-[#9a3412]" />
-                    <span className="text-[#9a3412] font-bold">
+                    <div className="w-2 h-2 rounded-full bg-red-500" />
+                    <span className="text-red-400 font-semibold">
                       Token loan model
                     </span>
                   </div>
                 </th>
                 <th className="text-left py-4 w-2/5">
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-none bg-accent" />
-                    <span className="text-accent font-bold">
+                    <div className="w-2 h-2 rounded-full bg-blue-500" />
+                    <span className="text-blue-400 font-semibold">
                       Self-custody retainer
                     </span>
                   </div>
@@ -108,14 +108,14 @@ export default function ComparePage() {
             </thead>
             <tbody>
               {rows.map((row) => (
-                <tr key={row.label} className="border-b border-rule">
-                  <td className="py-5 pr-8 text-faint font-medium align-top">
+                <tr key={row.label} className="border-b border-zinc-800/50">
+                  <td className="py-5 pr-8 text-zinc-500 font-medium align-top">
                     {row.label}
                   </td>
-                  <td className="py-5 pr-8 text-soft leading-relaxed align-top">
+                  <td className="py-5 pr-8 text-zinc-400 leading-relaxed align-top">
                     {row.loan}
                   </td>
-                  <td className="py-5 text-soft leading-relaxed align-top">
+                  <td className="py-5 text-zinc-300 leading-relaxed align-top">
                     {row.retainer}
                   </td>
                 </tr>
@@ -128,29 +128,29 @@ export default function ComparePage() {
         <div className="md:hidden space-y-8">
           {rows.map((row) => (
             <div key={row.label}>
-              <h3 className="text-sm font-medium text-faint mb-3">
+              <h3 className="text-sm font-medium text-zinc-500 mb-3">
                 {row.label}
               </h3>
               <div className="space-y-3">
-                <div className="bg-[#ebe6d8] border border-rule rounded-xl p-4">
+                <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-xl p-4">
                   <div className="flex items-center gap-2 mb-2">
-                    <div className="w-1.5 h-1.5 rounded-none bg-[#9a3412]" />
-                    <span className="text-xs font-medium text-[#9a3412]">
+                    <div className="w-1.5 h-1.5 rounded-full bg-red-500" />
+                    <span className="text-xs font-medium text-red-400">
                       Token loan
                     </span>
                   </div>
-                  <p className="text-sm text-soft leading-relaxed">
+                  <p className="text-sm text-zinc-400 leading-relaxed">
                     {row.loan}
                   </p>
                 </div>
-                <div className="bg-[#ebe6d8] border border-rule rounded-xl p-4">
+                <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-xl p-4">
                   <div className="flex items-center gap-2 mb-2">
-                    <div className="w-1.5 h-1.5 rounded-none bg-accent" />
-                    <span className="text-xs font-medium text-accent">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+                    <span className="text-xs font-medium text-blue-400">
                       Retainer
                     </span>
                   </div>
-                  <p className="text-sm text-soft leading-relaxed">
+                  <p className="text-sm text-zinc-300 leading-relaxed">
                     {row.retainer}
                   </p>
                 </div>
@@ -160,11 +160,11 @@ export default function ComparePage() {
         </div>
 
         {/* Bottom line */}
-        <div className="mt-16 bg-[#ebe6d8] border border-rule rounded-none p-8">
-          <h2 className="text-xl font-bold text-ink mb-3">
+        <div className="mt-16 bg-zinc-900/50 border border-zinc-800/50 rounded-2xl p-8">
+          <h2 className="text-xl font-semibold text-white mb-3">
             Our take
           </h2>
-          <p className="text-soft leading-relaxed mb-6">
+          <p className="text-zinc-400 leading-relaxed mb-6">
             We work exclusively on retainer, and we are not your market maker.
             You own the accounts and the capital and approve every parameter;
             we set up, operate and monitor open-source software on them. No
@@ -174,13 +174,13 @@ export default function ComparePage() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/#contact"
-              className="bg-accent text-paper px-8 py-3 rounded-none font-medium hover:bg-ink transition-colors text-center"
+              className="bg-white text-zinc-950 px-8 py-3 rounded-full font-medium hover:bg-zinc-200 transition-colors text-center"
             >
               Get in Touch
             </Link>
             <Link
               href="/blog/loan-vs-retainer"
-              className="border border-rule text-soft px-8 py-3 rounded-none hover:border-ink hover:text-ink transition-colors text-center"
+              className="border border-zinc-700 text-zinc-300 px-8 py-3 rounded-full hover:border-zinc-500 hover:text-white transition-colors text-center"
             >
               Read the Full Article
             </Link>

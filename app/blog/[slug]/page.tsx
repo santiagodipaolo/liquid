@@ -47,31 +47,31 @@ export default async function HubPostPage({ params }: Props) {
       <div className="max-w-3xl mx-auto px-6">
         <Link
           href="/blog"
-          className="text-sm text-faint hover:text-ink transition-colors mb-8 inline-block"
+          className="text-sm text-zinc-500 hover:text-white transition-colors mb-8 inline-block"
         >
           ← Back to blog
         </Link>
 
-        <div className="flex flex-wrap items-center gap-3 text-xs text-faint mb-4">
-          {by && <span className="text-soft">{by}</span>}
-          {by && <span className="text-rule">·</span>}
+        <div className="flex flex-wrap items-center gap-3 text-xs text-zinc-500 mb-4">
+          {by && <span className="text-zinc-300">{by}</span>}
+          {by && <span className="text-zinc-700">·</span>}
           <time dateTime={post.published_at ?? undefined}>{formatDate(post.published_at)}</time>
           {post.reading_time_minutes ? (
             <>
-              <span className="text-rule">·</span>
+              <span className="text-zinc-700">·</span>
               <span>{post.reading_time_minutes} min read</span>
             </>
           ) : null}
         </div>
 
-        <h1 className="text-3xl md:text-4xl font-normal text-ink mb-4 leading-tight">
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4 leading-tight">
           {post.title}
         </h1>
-        {post.subtitle && <p className="text-lg text-soft mb-8 leading-relaxed">{post.subtitle}</p>}
+        {post.subtitle && <p className="text-lg text-zinc-400 mb-8 leading-relaxed">{post.subtitle}</p>}
 
         {post.hero_image_url && (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={post.hero_image_url} alt="" className="w-full rounded-none border border-rule mb-10" />
+          <img src={post.hero_image_url} alt="" className="w-full rounded-lg border border-zinc-800 mb-10" />
         )}
 
         <article className="post-body">

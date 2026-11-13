@@ -13,8 +13,8 @@ import "katex/dist/katex.min.css";
  */
 function Callout({ children, title }: { children?: ReactNode; title?: string }) {
   return (
-    <aside className="my-8 border-l-2 border-accent bg-[#ebe6d8] px-5 py-4 text-soft">
-      {title && <p className="mb-2 font-bold text-ink">{title}</p>}
+    <aside className="my-8 border-l-2 border-blue-500 bg-zinc-900/50 px-5 py-4 text-zinc-300">
+      {title && <p className="mb-2 font-semibold text-white">{title}</p>}
       {children}
     </aside>
   );
@@ -25,8 +25,8 @@ function Figure({ src, alt = "", caption }: { src?: string; alt?: string; captio
   return (
     <figure className="my-8">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={src} alt={alt} className="w-full rounded-none border border-rule" />
-      {caption && <figcaption className="mt-2 text-sm text-faint">{caption}</figcaption>}
+      <img src={src} alt={alt} className="w-full rounded-lg border border-zinc-800" />
+      {caption && <figcaption className="mt-2 text-sm text-zinc-500">{caption}</figcaption>}
     </figure>
   );
 }

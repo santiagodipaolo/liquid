@@ -1,60 +1,59 @@
 @import "tailwindcss";
 
-/* Weibull in the POL family: Computer Modern on cream paper, hairline
- * rules, typewriter labels and one accent (Weibull blue), as on
- * labs.pol.finance, whose accent is rust. */
-@font-face { font-display: swap; font-family: "Computer Modern Serif"; font-style: normal; font-weight: 400; src: url("/fonts/cmunrm.ttf") format("truetype"); }
-@font-face { font-display: swap; font-family: "Computer Modern Serif"; font-style: italic; font-weight: 400; src: url("/fonts/cmunti.ttf") format("truetype"); }
-@font-face { font-display: swap; font-family: "Computer Modern Serif"; font-style: normal; font-weight: 700; src: url("/fonts/cmunbx.ttf") format("truetype"); }
-@font-face { font-display: swap; font-family: "Computer Modern Typewriter"; font-style: normal; font-weight: 400; src: url("/fonts/cmuntt.ttf") format("truetype"); }
-
-@theme {
-  --font-serif: "Computer Modern Serif", Georgia, "Times New Roman", serif;
-  --font-mono: "Computer Modern Typewriter", ui-monospace, monospace;
-  --font-sans: "Computer Modern Serif", Georgia, serif;
-  --color-paper: #f1ede1;
-  --color-ink: #1a1712;
-  --color-soft: #4a463c;
-  --color-faint: #7d776b;
-  --color-rule: #ddd7c8;
-  --color-accent: #24529a;
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
-html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
 
 body {
-  background: var(--color-paper);
-  color: var(--color-ink);
-  font-family: var(--font-serif);
-  font-variant-numeric: oldstyle-nums;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+  background: #08080c;
+  color: #e8e8ed;
 }
 
-/* Typewriter label, as in the Labs section heads. */
-.label { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-faint); font-variant-numeric: lining-nums; }
+/* Grain / noise overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 180px 180px;
+}
 
-summary::-webkit-details-marker { display: none; }
-summary { list-style: none; }
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  list-style: none;
+}
 
 /* Hub post bodies (app/blog/[slug]): the same voice as the hand-written post. */
-.post-body { color: var(--color-soft); line-height: 1.75; font-size: 1.0625rem; }
+.post-body { color: #a1a1aa; line-height: 1.75; font-size: 1.0625rem; }
 .post-body > * + * { margin-top: 1.25rem; }
-.post-body h2 { color: var(--color-ink); font-size: 1.5rem; font-weight: 600; letter-spacing: -0.01em; margin-top: 2.75rem; }
-.post-body h3 { color: var(--color-ink); font-size: 1.2rem; font-weight: 600; margin-top: 2rem; }
-.post-body a { color: var(--color-accent); }
+.post-body h2 { color: #fff; font-size: 1.5rem; font-weight: 600; letter-spacing: -0.01em; margin-top: 2.75rem; }
+.post-body h3 { color: #fff; font-size: 1.2rem; font-weight: 600; margin-top: 2rem; }
+.post-body a { color: #60a5fa; }
 .post-body a:hover { text-decoration: underline; }
-.post-body strong { color: var(--color-ink); font-weight: 600; }
+.post-body strong { color: #fff; font-weight: 600; }
 .post-body ul { list-style: disc; padding-left: 1.25rem; }
 .post-body ol { list-style: decimal; padding-left: 1.25rem; }
 .post-body li + li { margin-top: 0.4rem; }
-.post-body blockquote { border-left: 2px solid var(--color-accent); padding-left: 1rem; color: var(--color-soft); }
-.post-body code { font-family: var(--font-mono); font-size: 0.9em; color: var(--color-ink); background: #e8e3d4; padding: 0.1rem 0.35rem; border-radius: 4px; }
-.post-body pre { background: #ebe6d8; border: 1px solid var(--color-rule); border-radius: 8px; padding: 1rem; overflow-x: auto; }
+.post-body blockquote { border-left: 2px solid #3b82f6; padding-left: 1rem; color: #d4d4d8; }
+.post-body code { font-family: var(--font-mono); font-size: 0.9em; color: #e4e4e7; background: #18181b; padding: 0.1rem 0.35rem; border-radius: 4px; }
+.post-body pre { background: #0f0f14; border: 1px solid #27272a; border-radius: 8px; padding: 1rem; overflow-x: auto; }
 .post-body pre code { background: none; padding: 0; }
 .post-body table { width: 100%; border-collapse: collapse; font-size: 0.95rem; display: block; overflow-x: auto; }
-.post-body th, .post-body td { border-bottom: 1px solid var(--color-rule); padding: 0.5rem 0.75rem; text-align: left; }
-.post-body th { color: var(--color-ink); font-weight: 600; }
+.post-body th, .post-body td { border-bottom: 1px solid #27272a; padding: 0.5rem 0.75rem; text-align: left; }
+.post-body th { color: #fff; font-weight: 600; }
 .post-body img { max-width: 100%; border-radius: 8px; }
-.post-body hr { border-color: var(--color-rule); margin: 2.5rem 0; }
+.post-body hr { border-color: #27272a; margin: 2.5rem 0; }
 .post-body .katex-display { overflow-x: auto; overflow-y: hidden; }
