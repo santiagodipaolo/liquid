@@ -14,7 +14,7 @@ function Toggle({
     <button
       onClick={onToggle}
       className="relative flex items-center gap-3 mx-auto mb-12 group"
-      aria-label={active ? "Showing with liquid" : "Showing without liquid"}
+      aria-label={active ? "Showing with Weibull" : "Showing without Weibull"}
     >
       <span
         className={`text-sm font-medium transition-colors duration-300 ${
