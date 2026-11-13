@@ -1,5 +1,4 @@
 import Hero from "./components/Hero";
-import LogoCarousel from "./components/LogoCarousel";
 import Services from "./components/Services";
 import Comparison from "./components/Comparison";
 import Process from "./components/Process";
@@ -12,7 +11,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <LogoCarousel />
       <Services />
       <Comparison />
       <Process />
