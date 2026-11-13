@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { fetchPosts, formatDate } from "@/lib/hub";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -7,7 +8,19 @@ export const metadata: Metadata = {
     "Insights on token liquidity, DEX liquidity, cross-chain infrastructure, and how to run market making without handing over your tokens.",
 };
 
-const posts = [
+// Hourly floor; the Hub busts it on publish through /api/revalidate.
+export const revalidate = 3600;
+
+interface Entry {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  readTime: string;
+}
+
+// Written before the blog moved to the Hub; it lives in app/blog/loan-vs-retainer.
+const LEGACY: Entry[] = [
   {
     slug: "loan-vs-retainer",
     title: "Token loan vs retainer: choosing how to get liquidity for your token",
@@ -18,7 +31,19 @@ const posts = [
   },
 ];
 
-export default function BlogIndex() {
+export default async function BlogIndex() {
+  const hub = await fetchPosts();
+  const posts: Entry[] = [
+    ...hub.map((p) => ({
+      slug: p.slug,
+      title: p.title,
+      excerpt: p.excerpt ?? p.subtitle ?? "",
+      date: p.published_at ?? "",
+      readTime: p.reading_time_minutes ? `${p.reading_time_minutes} min read` : "",
+    })),
+    ...LEGACY,
+  ].sort((a, b) => b.date.localeCompare(a.date));
+
   return (
     <section className="pt-32 pb-20 md:pb-28">
       <div className="max-w-3xl mx-auto px-6">
@@ -38,20 +63,18 @@ export default function BlogIndex() {
               className="block py-8 group"
             >
               <div className="flex items-center gap-3 text-xs text-zinc-500 mb-3">
-                <time dateTime={post.date}>
-                  {new Date(post.date).toLocaleDateString("en-US", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}
-                </time>
-                <span className="text-zinc-700">·</span>
-                <span>{post.readTime}</span>
+                <time dateTime={post.date}>{formatDate(post.date)}</time>
+                {post.readTime && (
+                  <>
+                    <span className="text-zinc-700">·</span>
+                    <span>{post.readTime}</span>
+                  </>
+                )}
               </div>
               <h2 className="text-xl font-semibold text-white mb-2 group-hover:text-blue-400 transition-colors">
                 {post.title}
               </h2>
-              <p className="text-zinc-400 leading-relaxed">{post.excerpt}</p>
+              {post.excerpt && <p className="text-zinc-400 leading-relaxed">{post.excerpt}</p>}
             </Link>
           ))}
         </div>
